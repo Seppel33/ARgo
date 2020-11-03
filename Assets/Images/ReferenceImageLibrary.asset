@@ -35,3 +35,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: two
     m_Texture: {fileID: 2800000, guid: afa6b727578be4c40bdadc97af143e14, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4625961384605346747
+      m_GuidHigh: 15018745832773820081
+    m_SerializedTextureGuid:
+      m_GuidLow: 14944330218831722054
+      m_GuidHigh: 3298987785462977994
+    m_Size: {x: 0.16908851, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Book_Test
+    m_Texture: {fileID: 2800000, guid: d399b646ed27cf64ca95df7ee95bc82d, type: 3}
