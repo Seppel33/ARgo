@@ -102,10 +102,13 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
         void AssignPrefab(ARTrackedImage trackedImage)
         {
-            Destroy(m_ScenePrefab);
             if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab))
+            {
+                //Destroy(m_ScenePrefab);
+                m_ScenePrefab.SetActive(false);
                 //m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
                 m_ScenePrefab = Instantiate(prefab, trackedImage.transform);
+            }
         }
 
         public GameObject GetPrefabForReferenceImage(XRReferenceImage referenceImage)
