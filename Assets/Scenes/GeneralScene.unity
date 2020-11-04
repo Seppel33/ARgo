@@ -239,10 +239,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ImageLibrary: {fileID: 11400000, guid: 1e9e878a2b164e34e86cfa74b0b26c51, type: 2}
   m_Prefabs:
-  - {fileID: 1020281838436893931, guid: dbe571d371d92d24e9bbdae5ad3ffb1f, type: 3}
-  - {fileID: 2234913572446935139, guid: 69152ed4188e43d439e3b2f021369cbe, type: 3}
-  - {fileID: 1020281838436893931, guid: dbe571d371d92d24e9bbdae5ad3ffb1f, type: 3}
-  - {fileID: 2234913572446935139, guid: 69152ed4188e43d439e3b2f021369cbe, type: 3}
+  - {fileID: 1930763675414748, guid: 12315b0aaa5d14bc2a1ddbef51f1160a, type: 3}
+  - {fileID: 1000013336718754, guid: 4ceb82a463686fb438426373a2f0a8c9, type: 3}
+  - {fileID: 1085127443452676, guid: f8436bc3195da4ed4a91662d5d2baa83, type: 3}
+  - {fileID: 1000010736523784, guid: 9135bf8fbff0b034eaa7114c04b9ae23, type: 3}
   - {fileID: 1020281838436893931, guid: dbe571d371d92d24e9bbdae5ad3ffb1f, type: 3}
   - {fileID: 2234913572446935139, guid: 69152ed4188e43d439e3b2f021369cbe, type: 3}
   - {fileID: 1020281838436893931, guid: dbe571d371d92d24e9bbdae5ad3ffb1f, type: 3}
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 1e9e878a2b164e34e86cfa74b0b26c51,
     type: 2}
-  m_MaxNumberOfMovingImages: 8
+  m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &264295718
 MonoBehaviour:

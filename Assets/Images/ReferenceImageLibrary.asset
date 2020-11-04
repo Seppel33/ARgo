@@ -23,7 +23,7 @@ MonoBehaviour:
       m_GuidHigh: 17362436795580882824
     m_Size: {x: 0.1, y: 0.16908851}
     m_SpecifySize: 1
-    m_Name: one
+    m_Name: Scan1
     m_Texture: {fileID: 2800000, guid: 39b071efaa7ebae4881fc58346c4f3f0, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5164550918290208723
@@ -33,5 +33,25 @@ MonoBehaviour:
       m_GuidHigh: 9429761420005049642
     m_Size: {x: 0.1, y: 0.17273955}
     m_SpecifySize: 1
-    m_Name: two
+    m_Name: Scan2
     m_Texture: {fileID: 2800000, guid: 90d583befb5a3df42a8515ec0c3edd82, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5665211488922266566
+      m_GuidHigh: 15201943192571381150
+    m_SerializedTextureGuid:
+      m_GuidLow: 1190196752461418714
+      m_GuidHigh: 9039061469900123227
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: ARone
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5425044236717701597
+      m_GuidHigh: 9712188933043859361
+    m_SerializedTextureGuid:
+      m_GuidLow: 16484396793541867303
+      m_GuidHigh: 1458626073714285067
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: ARtwo
+    m_Texture: {fileID: 0}
