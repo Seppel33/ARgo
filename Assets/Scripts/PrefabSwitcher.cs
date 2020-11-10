@@ -35,8 +35,8 @@ namespace UnityEngine.XR.ARFoundation
                 // Handle added event
 
                 //resize image
-                var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y) / 2;
-                newImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
+                //var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y) / 2;
+                //newImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
 
                 //add new Prefab
                 int i = m_ImageLibrary.indexOf(newImage.referenceImage);
@@ -44,6 +44,7 @@ namespace UnityEngine.XR.ARFoundation
                 {
                     GameObject prefab = m_Prefabs[i];
                     m_InstatiatedPrefabs.Add(newImage.referenceImage.name ,Instantiate(prefab, newImage.transform));
+                    m_InstatiatedPrefabs[newImage.referenceImage.name].gameObject.transform.Rotate(new Vector3(1, 0, 0), 90f);
                     m_InstatiatedPrefabs[newImage.referenceImage.name].name = newImage.referenceImage.name;
                     ChangePage(newImage);
                 }
