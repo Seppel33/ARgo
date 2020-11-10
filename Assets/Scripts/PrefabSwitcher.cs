@@ -35,8 +35,9 @@ namespace UnityEngine.XR.ARFoundation
                 // Handle added event
 
                 //resize image
-                var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y) / 2;
-                newImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
+                //var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y); // /2
+                //var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y); // /2
+                newImage.transform.localScale = new Vector3(newImage.size.x, 1, newImage.size.y);
 
                 //add new Prefab
                 int i = m_ImageLibrary.indexOf(newImage.referenceImage);

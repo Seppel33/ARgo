@@ -44,7 +44,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: ARone
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: f34950da6da310845b2c51108432717d, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5425044236717701597
       m_GuidHigh: 9712188933043859361
@@ -54,4 +54,14 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: ARtwo
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: afa6b727578be4c40bdadc97af143e14, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4702355009867448859
+      m_GuidHigh: 16940482310970368649
+    m_SerializedTextureGuid:
+      m_GuidLow: 13449047320418999661
+      m_GuidHigh: 121483283857821144
+    m_Size: {x: 0.1829, y: 0.22632992}
+    m_SpecifySize: 1
+    m_Name: Buchcover-Japan
+    m_Texture: {fileID: 2800000, guid: 24fe5d6d9d48baa4d84d7e2c6798af01, type: 3}
