@@ -51,7 +51,7 @@ public class RotationFloating : MonoBehaviour
         if (floatingY)
         {
             Vector3 floatingPos = transform.position;
-            transform.position = new Vector3(floatingPos.x,firstYPos+0.4f*Mathf.Sin(1.5f*Time.time),floatingPos.z);        
+            transform.position = new Vector3(floatingPos.x,firstYPos+3f*Mathf.Sin(1.5f*Time.time),floatingPos.z);        
         }
     }
 }

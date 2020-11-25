@@ -6,7 +6,11 @@ public class RotateAround : MonoBehaviour
 {
 
     public GameObject rotTarget;
-    public int speed;
+    public float speed;
+
+    public float selfRotate;
+
+    public float distToSun;
     void Start()
     {
         
@@ -15,6 +19,6 @@ public class RotateAround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(rotTarget.transform.position, Vector3.up, speed * Time.deltaTime);
+        transform.RotateAround(rotTarget.transform.position, Vector3.up, (0.0005f*speed) * Time.deltaTime);
     }
 }
