@@ -20,14 +20,15 @@ public class RotateAround : MonoBehaviour
     void Start()
     {
         currentRealMode = false;
+        currentRealMode = SolarContentManager.ShowRealValue;
         Setup();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up, speed);
-        transform.GetChild(0).transform.Rotate(Vector3.up, selfRotate);
+        transform.Rotate(Vector3.up, speed* Time.deltaTime * 500);
+        transform.GetChild(0).transform.Rotate(Vector3.up, selfRotate* Time.deltaTime * 500);
 
         if(currentRealMode != SolarContentManager.ShowRealValue)
         {
@@ -60,7 +61,6 @@ public class RotateAround : MonoBehaviour
         {
             transform.GetChild(1).transform.localPosition = new Vector3(position, 0, 0);
         }
-
         transform.GetChild(0).transform.localScale = new Vector3(scale, scale, scale);
 
         //set lenght of trail
