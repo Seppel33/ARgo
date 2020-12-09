@@ -40,6 +40,12 @@ public class ScreenCapture : MonoBehaviour
         arCamera.targetTexture = RenderTexture.GetTemporary(arCamera.pixelWidth, arCamera.pixelHeight, 16);
         takeScreenshotOnNextframe = true;
     }
+    
+    public void CaptureScreenshot() {
+        D.Log("Der Screenshot wurde gespeichert in: " + Application.persistentDataPath);
+        
+        UnityEngine.ScreenCapture.CaptureScreenshot("TestScreenshot.png");
+    }
 }
 
 
