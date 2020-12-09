@@ -80,7 +80,7 @@ public class RotateAround : MonoBehaviour
 
             ps.Play();
 
-            transform.GetChild(0).transform.GetComponentInChildren<ParticleSystem>().gameObject.transform.localScale = SolarContentManager.PrefabScale;
+            //transform.GetChild(0).transform.GetComponentInChildren<ParticleSystem>().gameObject.transform.localScale = SolarContentManager.PrefabScale;
         }
         catch { }
     }
