@@ -64,11 +64,24 @@ public class RotateAround : MonoBehaviour
         transform.GetChild(0).transform.localScale = new Vector3(scale, scale, scale);
 
         //set lenght of trail
-        try
+
+        /*try
         {
             transform.GetChild(0).transform.GetComponentInChildren<TrailRenderer>().time = 0.209f/(position* Mathf.PI * (Mathf.Abs(speed)/180));
         }
+        catch { }*/
+        try
+        {
+            ParticleSystem ps = transform.GetChild(0).transform.GetComponentInChildren<ParticleSystem>();
+            ps.Stop(); // Cannot set duration whilst Particle System is playing
+
+            var main = ps.main;
+            main.startLifetime = (0.04106f * 5) / Mathf.Abs(speed);
+
+            ps.Play();
+
+            transform.GetChild(0).transform.GetComponentInChildren<ParticleSystem>().gameObject.transform.localScale = SolarContentManager.PrefabScale;
+        }
         catch { }
-        
     }
 }

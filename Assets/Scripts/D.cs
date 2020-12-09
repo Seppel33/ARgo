@@ -53,7 +53,7 @@ public class D : MonoBehaviour
     public static void LogStack(string debugMessage, bool pin)
     {
         //stacks specific Messages if
-        //pin = true -> message stays on screen (for all other mathods too)
+        //pin = true -> message stays on screen (for all other methods too)
 
         //todo
     }
