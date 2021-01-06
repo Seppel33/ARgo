@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Toggle = UnityEngine.UIElements.Toggle;
 
 public class Texts : MonoBehaviour
 {
@@ -12,10 +13,14 @@ public class Texts : MonoBehaviour
     [SerializeField] private int index;
 
     private Text infobox;
+    private int infobuttonCount;
+    private GameObject[] infobuttons;
     
     void Start()
     {
         infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
+        
+        infobuttons = GameObject.FindGameObjectsWithTag ("Bulb");
     }
 
     private void Update()
@@ -29,7 +34,6 @@ public class Texts : MonoBehaviour
                 DisplayText();
             }
         }
-        //TurnBulbOff();
     }
 
     public void DisplayText()
@@ -37,8 +41,22 @@ public class Texts : MonoBehaviour
         infobox.text = infoText[index];
     }
 
-    public void TurnBulbOff()
+    public void TurnBulbOff(bool tog)
     {
-        GameObject.FindWithTag("Bulb").SetActive(false);
+        if (tog)
+        {
+            foreach(GameObject go in infobuttons)
+            {
+                go.SetActive (false);
+            }
+        }
+        else
+        {
+            foreach(GameObject go in infobuttons)
+            {
+                go.SetActive (true);
+            }
+        }
+            
     }
 }
