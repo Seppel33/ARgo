@@ -19,12 +19,12 @@ MonoBehaviour:
       m_GuidLow: 5078992371426946571
       m_GuidHigh: 7476922660117365678
     m_SerializedTextureGuid:
-      m_GuidLow: 13467076244855091695
-      m_GuidHigh: 17362436795580882824
-    m_Size: {x: 0.1, y: 0.16908851}
+      m_GuidLow: 11485385314742289499
+      m_GuidHigh: 7942264499799141689
+    m_Size: {x: 0.09987981, y: 0.1}
     m_SpecifySize: 1
     m_Name: Scan1
-    m_Texture: {fileID: 2800000, guid: 39b071efaa7ebae4881fc58346c4f3f0, type: 3}
+    m_Texture: {fileID: 2800000, guid: 71b3c45b49179f64392db98e7b97386e, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5164550918290208723
       m_GuidHigh: 14759902187627865993
@@ -55,13 +55,3 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: ARtwo
     m_Texture: {fileID: 2800000, guid: afa6b727578be4c40bdadc97af143e14, type: 3}
-  - m_SerializedGuid:
-      m_GuidLow: 4702355009867448859
-      m_GuidHigh: 16940482310970368649
-    m_SerializedTextureGuid:
-      m_GuidLow: 13449047320418999661
-      m_GuidHigh: 121483283857821144
-    m_Size: {x: 0.1829, y: 0.22632992}
-    m_SpecifySize: 1
-    m_Name: Buchcover-Japan
-    m_Texture: {fileID: 2800000, guid: 24fe5d6d9d48baa4d84d7e2c6798af01, type: 3}
