@@ -20,7 +20,7 @@ public class Texts : MonoBehaviour
     {
         infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
         
-        infobuttons = GameObject.FindGameObjectsWithTag ("Bulb");
+        infobuttons = GameObject.FindGameObjectsWithTag("Bulb");
     }
 
     private void Update()
