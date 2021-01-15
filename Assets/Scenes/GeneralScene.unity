@@ -317,7 +317,6 @@ MonoBehaviour:
     es gibt dort noch viel mehr zu sehen\u2026\u201C"
   - 
   index: 0
-  infobuttons: []
 --- !u!114 &189936442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,14 +388,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ImageLibrary: {fileID: 11400000, guid: 1e9e878a2b164e34e86cfa74b0b26c51, type: 2}
   m_Prefabs:
-  - {fileID: 1930763675414748, guid: 12315b0aaa5d14bc2a1ddbef51f1160a, type: 3}
-  - {fileID: 1000013336718754, guid: 4ceb82a463686fb438426373a2f0a8c9, type: 3}
-  - {fileID: 9088054831769039951, guid: 299a2aa0e7f07834283b8f40786d015b, type: 3}
-  - {fileID: 1000010736523784, guid: 9135bf8fbff0b034eaa7114c04b9ae23, type: 3}
   - {fileID: 5658016570088212760, guid: 66218eaaf97cdcf4a9d954e7a91f80e0, type: 3}
-  - {fileID: 2234913572446935139, guid: 69152ed4188e43d439e3b2f021369cbe, type: 3}
-  - {fileID: 1020281838436893931, guid: dbe571d371d92d24e9bbdae5ad3ffb1f, type: 3}
-  - {fileID: 2234913572446935139, guid: 69152ed4188e43d439e3b2f021369cbe, type: 3}
+  - {fileID: 0}
+  - {fileID: 9088054831769039951, guid: 299a2aa0e7f07834283b8f40786d015b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &264295717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,7 +768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoText: []
   index: 0
-  infobuttons: []
 --- !u!1 &410475476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,7 +2412,6 @@ MonoBehaviour:
     es gibt dort noch viel mehr zu sehen\u2026\u201C"
   - 
   index: 0
-  infobuttons: []
 --- !u!114 &1666634028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2671,7 +2668,6 @@ MonoBehaviour:
     es gibt dort noch viel mehr zu sehen\u2026\u201C"
   - 
   index: 0
-  infobuttons: []
 --- !u!114 &1745569879
 MonoBehaviour:
   m_ObjectHideFlags: 0

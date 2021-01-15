@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728b6b593fe38004596c5bbfce1e697e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sun: {fileID: 5016204487343921989}
 --- !u!1 &513939469186804281
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,22 +142,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4341848414265432420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831274597270862996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea188338b149d9f4b93318078a28e119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  infoText:
-  - "Die Sonne wurde gedr\xFCckt!"
-  index: 0
-  infobuttons: []
 --- !u!1 &2799031315254490599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,9 +1122,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4956752569861215353}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &831274597270862996 stripped
+--- !u!1 &5016204487343921989 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5710753326723213549, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+  m_CorrespondingSourceObject: {fileID: 95929452752523068, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
     type: 3}
   m_PrefabInstance: {fileID: 4956752569861215353}
   m_PrefabAsset: {fileID: 0}
