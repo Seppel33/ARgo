@@ -17,18 +17,13 @@ public class RotateAround : MonoBehaviour
     public float planetScale; //mio km
     public float scaledPlanetScale;
 
-    private TrailRenderer trail;
+    //private TrailRenderer trail;
+    public CustomTrail trail;
     void Start()
     {
         currentRealMode = false;
         currentRealMode = SolarContentManager.ShowRealValue;
-        Setup();
-        try
-        {
-            trail = transform.GetChild(0).transform.GetComponentInChildren<TrailRenderer>();
-        }
-        catch { }
-        
+        Setup();   
     }
 
     // Update is called once per frame
@@ -79,7 +74,8 @@ public class RotateAround : MonoBehaviour
         //set lenght of trail
         if (trail != null)
         {
-            trail.time = 0.209f / (position * Mathf.PI * (Mathf.Abs(speed) / 180));
+            trail.lenght = (int)((0.168691f / (position * Mathf.PI * (Mathf.Abs(speed) / 180)))*25.1f);
+            //trail.width = 1 / 1000;//SolarContentManager.PrefabScale.x/100;
         }
 
         
@@ -97,12 +93,17 @@ public class RotateAround : MonoBehaviour
         }
         catch { }*/
     }
-
+    /*
     private void CorrectTrailPoints()
     {
-        for(int i = 0; i<trail.positionCount; i++)
+        if (SolarContentManager.relativeSunMovement.x > 0 || SolarContentManager.relativeSunMovement.y > 0 || SolarContentManager.relativeSunMovement.z > 0)
         {
-            trail.SetPosition(i, trail.GetPosition(i) + SolarContentManager.relativeSunMovement);
+            for (int i = 0; i < trail.positionCount; i++)
+            {
+                Debug.Log(trail.GetPosition(i) + "; " + transform.position);
+                trail.SetPosition(i, trail.GetPosition(i) + SolarContentManager.relativeSunMovement);
+                Debug.Log(trail.GetPosition(i));
+            }
         }
-    } 
+    } */
 }
