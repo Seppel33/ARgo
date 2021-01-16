@@ -8,20 +8,24 @@ using Toggle = UnityEngine.UIElements.Toggle;
 
 public class Texts : MonoBehaviour
 {
-    [SerializeField] private String[] infoText;
-
-    [SerializeField] private int index;
-
+    [SerializeField] private String infoText;
+    
     private Text infobox;
-    private int infobuttonCount;
+    private GameObject infoBoxGameObject;
+    public AudioSource infoboxAudioSource;
+    public GameObject raycastHitObject;
+    public AudioClip readAudio;
+    
     private GameObject[] infobuttons;
     private GameObject[] arPrefabs;
+    
     
     
     void Start()
     {
         infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
-        
+        infoBoxGameObject = GameObject.Find("TextboxLOGroup");
+        infoboxAudioSource = GameObject.Find("AudioReadText").GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -32,14 +36,40 @@ public class Texts : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
-                DisplayText();
+                //Am besten, wenn man hiden und showen kann wann man will.
+                infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
+                raycastHitObject = Hit.transform.gameObject;
+                //DisplayText(Hit.transform.gameObject.GetComponent<Texts>().infoText);
+                infobox.text = raycastHitObject.GetComponent<Texts>().infoText;
+                
+                //infoboxAudio = gameObject.GetComponent<AudioSource>();
+                infoboxAudioSource.clip = raycastHitObject.GetComponent<Texts>().readAudio;
+                infoboxAudioSource.Stop();
+                infoboxAudioSource.Play();
             }
         }
     }
 
-    public void DisplayText()
+    /*public void DisplayText(String txt)
     {
-        infobox.text = infoText[index];
+        //InfoText anzeigen
+        infobox.text = txt;
+        
+        //AudioInfobox Abspielen
+        infoboxAudio.Stop();
+        infoboxAudio.Play();
+    }*/
+
+    public void InfoAudioPlay()
+    {
+        if (infoboxAudioSource.isPlaying)
+        {
+            infoboxAudioSource.Stop();
+        }
+        else
+        {
+            infoboxAudioSource.Play();
+        }
     }
 
     //In eigene Klasse
