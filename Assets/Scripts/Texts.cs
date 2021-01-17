@@ -38,6 +38,7 @@ public class Texts : MonoBehaviour
             {
                 //Am besten, wenn man hiden und showen kann wann man will.
                 infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
+                
                 raycastHitObject = Hit.transform.gameObject;
                 //DisplayText(Hit.transform.gameObject.GetComponent<Texts>().infoText);
                 infobox.text = raycastHitObject.GetComponent<Texts>().infoText;
