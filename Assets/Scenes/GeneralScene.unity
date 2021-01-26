@@ -315,13 +315,13 @@ MonoBehaviour:
   m_ImageLibrary: {fileID: 11400000, guid: 1e9e878a2b164e34e86cfa74b0b26c51, type: 2}
   m_Prefabs:
   - {fileID: 5658016570088212760, guid: 66218eaaf97cdcf4a9d954e7a91f80e0, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4748672346441186118, guid: 0e7275b5ebbef34448d8503abcbbd53b, type: 3}
+  - {fileID: 280533573543365961, guid: 03886271b2c36f94eac11302e887af8b, type: 3}
   - {fileID: 9088054831769039951, guid: 299a2aa0e7f07834283b8f40786d015b, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4533281449560055484, guid: a4f8e1cdc8498b04681d13fa5aee29d4, type: 3}
+  - {fileID: 4873840113813381078, guid: 96bae61ae63ab83489005e1f1bea143f, type: 3}
+  - {fileID: 2268506911352799903, guid: f4b5720ab63600c4ca28ed54661e8d4c, type: 3}
+  - {fileID: 7971906081109749230, guid: d4937b315bdb9b1429fcdb515fa4b6f9, type: 3}
 --- !u!114 &264295717
 MonoBehaviour:
   m_ObjectHideFlags: 0
