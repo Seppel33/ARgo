@@ -95,3 +95,23 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: DS8
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5359394391058296691
+      m_GuidHigh: 5208695937992225160
+    m_SerializedTextureGuid:
+      m_GuidLow: 15565725912272688948
+      m_GuidHigh: 5283129388322337098
+    m_Size: {x: 0.42008466, y: 0.21}
+    m_SpecifySize: 1
+    m_Name: 7-optimized
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5455975295730102605
+      m_GuidHigh: 6147747567271801264
+    m_SerializedTextureGuid:
+      m_GuidLow: 4027491061959880182
+      m_GuidHigh: 16155721169338901819
+    m_Size: {x: 0.42008466, y: 0.21}
+    m_SpecifySize: 1
+    m_Name: 7-optimized2
+    m_Texture: {fileID: 0}
