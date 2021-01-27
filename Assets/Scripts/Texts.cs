@@ -23,7 +23,10 @@ public class Texts : MonoBehaviour
     
     void Start()
     {
-        infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
+        if (infobox != null)
+        {
+            infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
+        }
         infoBoxGameObject = GameObject.Find("TextboxLOGroup");
         infoboxAudioSource = GameObject.Find("AudioReadText").GetComponent<AudioSource>();
     }
