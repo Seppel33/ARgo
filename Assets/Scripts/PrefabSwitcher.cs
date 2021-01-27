@@ -37,8 +37,9 @@ namespace UnityEngine.XR.ARFoundation
                 //resize image
                 //var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y); // /2
                 var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y); // /2
-                newImage.transform.localScale = new Vector3(minLocalScalar, 0.1f, minLocalScalar);
-
+                
+                newImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
+                
                 //add new Prefab
                 int i = m_ImageLibrary.indexOf(newImage.referenceImage);
                 if( i <= m_Prefabs.Length)
@@ -49,7 +50,7 @@ namespace UnityEngine.XR.ARFoundation
                     m_InstatiatedPrefabs[newImage.referenceImage.name].name = newImage.referenceImage.name;
                     ChangePage(newImage);
                 }
-
+                D.Log("" + minLocalScalar + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.localScale + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.lossyScale);
                 //D.LogNR("OnChanged.added " + newImage.referenceImage.name);
             }
 
