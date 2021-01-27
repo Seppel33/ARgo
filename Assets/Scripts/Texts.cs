@@ -24,12 +24,14 @@ public class Texts : MonoBehaviour
     void Start()
     {
         infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
+        
         infoBoxGameObject = GameObject.Find("TextboxLOGroup");
         infoboxAudioSource = GameObject.Find("AudioReadText").GetComponent<AudioSource>();
     }
 
     private void Update()
     {
+        //Debug.Log(infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount);
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -38,6 +40,13 @@ public class Texts : MonoBehaviour
             {
                 //Am besten, wenn man hiden und showen kann wann man will.
                 infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
+                for (int i = 0; i < infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount; i++)
+                {
+                    if (!infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.activeInHierarchy)
+                    {
+                        infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(true);
+                    }
+                }
                 
                 raycastHitObject = Hit.transform.gameObject;
                 //DisplayText(Hit.transform.gameObject.GetComponent<Texts>().infoText);
@@ -51,15 +60,15 @@ public class Texts : MonoBehaviour
         }
     }
 
-    /*public void DisplayText(String txt)
+    public void DisplayText(String txt)
     {
         //InfoText anzeigen
         infobox.text = txt;
         
         //AudioInfobox Abspielen
-        infoboxAudio.Stop();
-        infoboxAudio.Play();
-    }*/
+        //infoboxAudio.Stop();
+        //infoboxAudio.Play();
+    }
 
     public void InfoAudioPlay()
     {
