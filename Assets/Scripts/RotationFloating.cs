@@ -16,11 +16,15 @@ public class RotationFloating : MonoBehaviour
     public bool reverseZ;
 
     public bool floatingY;
+
+    public float floatingStrenght = 0.1f;
+    public float floatingSpeed = 1f;
     public float firstYPos;
 
     private void Start()
     {
         firstYPos = transform.position.y;
+        
     }
 
     void Update ()
@@ -51,7 +55,7 @@ public class RotationFloating : MonoBehaviour
         if (floatingY)
         {
             Vector3 floatingPos = transform.position;
-            transform.position = new Vector3(floatingPos.x,firstYPos+3f*Mathf.Sin(1.5f*Time.time),floatingPos.z);        
+            transform.position = new Vector3(floatingPos.x,firstYPos+floatingStrenght*Mathf.Sin(floatingSpeed*Time.time),floatingPos.z);        
         }
     }
 }

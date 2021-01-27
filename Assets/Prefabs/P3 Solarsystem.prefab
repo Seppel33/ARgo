@@ -681,6 +681,479 @@ Transform:
   m_Father: {fileID: 9088054831769039958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1230472122874263149
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1202857407164450992}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 95.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.299995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DVenus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Die Venus ist fast genauso gro\xDF wie die Erde und kommt ihr von allen
+        Planeten am n\xE4chsten. Aber sie ist ein wahrlich h\xF6llischer Planet!
+        Am Tag ist es dort 460\xB0C hei\xDF und die Oberfl\xE4che ist mit Vulkanen
+        \xFCbers\xE4t. Zudem gibt es dicke Wolken, aus denen es S\xE4ure regnet. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!1001 &2142227727111584493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6938582020502631804}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DSaturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Der Saturn ist von allen Planeten vermutlich am einfachsten an den
+        Ringen zu erkennen die ihn umgeben. Die 11 Ringe bestehen aus Eisbrocken,
+        Steinen und Staubk\xF6rnern. Au\xDFerdem gibt es riesige Blitze auf dem Saturn,
+        die eine Millionen Mal st\xE4rker sind als auf der Erde und bis zu 100m breit
+        seien k\xF6nnen."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!1001 &2499013237612281776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 715705016589275783}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 157.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DMars
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Der \u201COlympus Mons\u201D ist ein riesiger Vulkan auf dem Mars.
+        Er ist der gr\xF6\xDFte Berg im ganzen Sonnensystem und ca. 2,5-mal so gro\xDF,
+        wie der h\xF6chste Berg der Erde. Au\xDFerdem gibt es dort riesige Staub-Tornados,
+        die einen Kilometer Durchmesser haben k\xF6nnen! Der Mars ist der Erde am
+        \xE4hnlichsten und Forscher versuchen herauszufinden, ob Menschen eines Tages
+        vielleicht mal auf dem Mars leben k\xF6nnten. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!1001 &3068782679346074824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4368055349247706337}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 420.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 51.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DUranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Der Uranus z\xE4hlt zu den Eisplaneten, da er zum gr\xF6\xDFten Teil
+        aus gefrorenem Wasser besteht. Auf dem Uranus bleibt es im Sommer rund 40
+        Jahre lang hell. Zudem behaupten einige Wissenschaftler, dass es dort Diamanten
+        regnet, die sich am Himmel aus einem Gas bilden."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!1001 &4831767434101179295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9163594019558340057}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52.799995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DNeptun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Der Uranus z\xE4hlt zu den Eisplaneten, da er zum gr\xF6\xDFten Teil
+        aus gefrorenem Wasser besteht. Auf dem Uranus bleibt es im Sommer rund 40
+        Jahre lang hell. Zudem behaupten einige Wissenschaftler, dass es dort Diamanten
+        regnet, die sich am Himmel aus einem Gas bilden."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512589938847766070, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512589938847766070, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.064
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &4956752569861215353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -762,3 +1235,336 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4956752569861215353}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3182580643791054937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7557919820539640864, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4505526571187014336 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8813320964285308601, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &715705016589275783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5559515451262879486, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7781998823727824945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3402146813105083464, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6938582020502631804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2630990204033147141, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4368055349247706337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8671574435195687064, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9163594019558340057 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4315094983905255840, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1202857407164450992 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6086760320014556361, guid: 82e6f8de6e4ca8e45a36e01d19a8e3ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4956752569861215353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5160016834782326747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3182580643791054937}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 102.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.696
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 154.07626
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 154.07626
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 154.07626
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DSonne
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Unser Sonnensystem hei\xDFt \u201CMilchstra\xDFe\u201D. Der Name ist
+        aus dem griechischen entstanden, weil das Sonnensystem von weitem aussieht
+        wie ein wei\xDFer Fleck, als h\xE4tte jemand Milch versch\xFCttet. Wenn man
+        etwas n\xE4her hinguckt sieht man aber, dass dieser Fleck aus verschiedenen
+        Objekten besteht, die die Forscher bis heute noch untersuchen. Dazu z\xE4hlen
+        auch die Sonne und die acht Planeten, die sie umkreisen. Unsere Sonne ist
+        750-mal so schwer, wie alle Planeten zusammen. Sie sorgt daf\xFCr, dass es
+        auf der Erde hell und warm ist. Die Oberfl\xE4che ist 550\xB0C hei\xDF und
+        gleicht einer Feuerlandschaft, auf der es immer wieder riesige Gas-Explosionen
+        gibt. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!1001 &6186198832995782315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7781998823727824945}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 230.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 64.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DJupiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Der Jupiter ist der gr\xF6\xDFte Planet. Er hat mindestens 63 Monde
+        und somit die meisten aller Planeten. Darunter ist \u201CGanymed\u201D der
+        gr\xF6\xDFte Mond des Sonnensystems. 1 Tag dauert auf dem Jupiter nur ca.
+        9,8 Stunden. Zudem wurde dort ein Sturm entdeckt, der bereits seit 340 Jahren
+        dort w\xFCtet."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!1001 &7022688985302200507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4505526571187014336}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 70.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7079
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 123.07179
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DMerkur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Merkur ist der kleinste Planet unseres Sonnensystems. Weil er so nah
+        an der Sonne ist gibt es zwischen Tag und Nacht einen Temperaturunterschied
+        von \xFCber 500\xB0C! Au\xDFerdem haben Forscher beobachtet das der Planet
+        langsam schrumpft: Weil er in der Mitte aus Eisen ist und sich dieser Kern
+        abk\xFChlt, zieht er sich zusammen. Die Breite des Planeten ist bereits um
+        ca. 12 Kilometer kleiner geworden. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}

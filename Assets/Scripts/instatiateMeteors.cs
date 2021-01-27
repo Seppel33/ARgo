@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class instatiateMeteors : MonoBehaviour
 {
-    public GameObject meteor;
+   
+    public  GameObject [] asteroiden;
+    
+    
 
     void Start(){
+        
+
         StartCoroutine(startMeteors());
     }
     
@@ -14,7 +19,7 @@ public class instatiateMeteors : MonoBehaviour
     IEnumerator startMeteors()
     {
         while (gameObject.active){
-            GameObject.Instantiate(meteor);
+            GameObject.Instantiate(asteroiden[(int)(Random.Range(1f,3f))]);
             yield return new WaitForSeconds(Random.Range(0.1f,2f));
 
         }

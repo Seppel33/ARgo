@@ -242,7 +242,7 @@ Transform:
   - {fileID: 6618086850529627059}
   - {fileID: 2871768900972821767}
   m_Father: {fileID: 4748672346441186140}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4360237924808739650
 GameObject:
@@ -367,6 +367,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5700555573073101117}
+  - {fileID: 2173221688311399211}
+  - {fileID: 1005306853448439165}
   - {fileID: 3034364379725045536}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -816,3 +818,219 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 108e2c4f4b3114e57adea984e7d958bb, type: 3}
+--- !u!1001 &5114276542181695214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4748672346441186140}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.568
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000038647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DMond
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Monde sind Gesteinsk\xF6rper, die um Planeten kreisen. Der Mond der
+        die Erde umkreist ist 4mal so klein wie die Erde selbst. Wenn man ihn nachts
+        am Himmel sehen kann liegt das daran, dass der von der Sonne angestrahlt
+        wird, denn Monde k\xF6nnen selbst gar nicht leuchten. 1969 ist der erste
+        Mensch auf dem Mond gewesen: der Amerikaner Neil Armstrong. Seitdem gibt
+        es immer wieder Raummissionen auf dem Mond. Wenn man sich Aufnahmen von Astronauten
+        auf dem Mond anguckt sieht es immer so aus, als w\xFCrden sie sich in ganz
+        langsam bewegen. Das liegt daran, dass auf dem Mond eine geringere Schwerkraft
+        ist als auf der Erde. Schwerkraft ist das was daf\xFCr sorgt, dass wenn du
+        in die Luft springst du irgendwann wieder auf dem Boden landest. Auf dem
+        Mond sieht das ein bisschen anders aus, wenn man dort hochspringt dauert
+        es viel l\xE4nger bis man wieder auf dem Boden aufkommt. Das f\xFChlt sich
+        dann ein bisschen so an als w\xE4re man Unterwasser. \xDCbrigens gibt es
+        im Weltall nicht nur den einen Mond, der um unsere Erde kreist. Tats\xE4chlich
+        haben auch viele andere Planeten Monde und oft sogar mehr als einen. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!4 &1005306853448439165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+    type: 3}
+  m_PrefabInstance: {fileID: 5114276542181695214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6134689627596703928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4748672346441186140}
+    m_Modifications:
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.831
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0099578
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9207328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9207328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9207328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472137997212, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: m_Name
+      value: InfoButton3DErde
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Die Erde ist vor mehr als 4.5 Milliarden Jahren bei einer riesigen
+        Explosion im Weltraum entstanden. Man nennt diese Explosion den Urknall.
+        Seitdem haben sich unz\xE4hlige Lebensformen auf unserem Planeten angesiedelt,
+        die sich mit der Zeit immer wieder ver\xE4ndert haben. Die Erde ist der einzige
+        bekannte Planet, auf dem es Leben gibt. Die Erde dreht sich permanent um
+        sich selbst. Eine komplette Umdrehung dauert dabei fast einen Tag, also beinahe
+        24 Stunden. Wenn ein Teil der Erde zur Sonne ausgerichtet ist, dann ist es
+        dort hell und warm. Die Menschen bezeichnen das dann als Tag. Und wenn dieser
+        Teil dann von der Sonne weggedreht ist, dann ist es dunkel und k\xFChl, also
+        Nacht. Die Erde dreht sich jedoch nicht nur um die eigene Achse, sondern
+        auch einmal um die Sonne herum. Diese Sonnenumrundung dauert 1 Jahr und durch
+        die verschiedenen Abst\xE4nde die dabei zwischen Sonne und Erde liegen entstehen
+        die verschiedenen Jahreszeiten: Fr\xFChling, Sommer, Herbst und Winter. "
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
+--- !u!4 &2173221688311399211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5407167472137997203, guid: a078be97b59257243bb83b47940afa26,
+    type: 3}
+  m_PrefabInstance: {fileID: 6134689627596703928}
+  m_PrefabAsset: {fileID: 0}
