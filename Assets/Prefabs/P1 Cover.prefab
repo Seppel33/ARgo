@@ -107,8 +107,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2391934820014728571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.13700001, z: 0}
-  m_LocalScale: {x: 0.113, y: 0.113, z: 0.11}
+  m_LocalPosition: {x: 0, y: 0.148, z: 0}
+  m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_Children: []
   m_Father: {fileID: 2702096084769254782}
   m_RootOrder: 1
@@ -404,7 +404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4315174898811688694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.129, y: -0.139, z: 1.239}
+  m_LocalPosition: {x: -1.181, y: -0.412, z: 4.39}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 2702096084769254782}
@@ -471,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5658016570088212738}
   m_Layer: 0
-  m_Name: BookCover
+  m_Name: P1 Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -518,8 +518,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8692255142833432016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2917, z: 0}
-  m_LocalScale: {x: 0.023386, y: 0.023386, z: 0.023386}
+  m_LocalPosition: {x: 0, y: 0.325, z: 0}
+  m_LocalScale: {x: 0.02586, y: 0.02586, z: 0.02586}
   m_Children: []
   m_Father: {fileID: 2702096084769254782}
   m_RootOrder: 2
@@ -585,12 +585,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.067
+      value: -0.049
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.261
+      value: -0.251
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
@@ -640,17 +640,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.135
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.135
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.135
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
         type: 3}
