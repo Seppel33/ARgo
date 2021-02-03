@@ -771,6 +771,11 @@ PrefabInstance:
         Am Tag ist es dort 460\xB0C hei\xDF und die Oberfl\xE4che ist mit Vulkanen
         \xFCbers\xE4t. Zudem gibt es dicke Wolken, aus denen es S\xE4ure regnet. "
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f8cd12b0d0166043b736e61a7e4eb03, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &2142227727111584493
@@ -864,6 +869,11 @@ PrefabInstance:
         die eine Millionen Mal st\xE4rker sind als auf der Erde und bis zu 100m breit
         seien k\xF6nnen."
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 326c9e4ce0b8bb04b9d7704e174f1dbf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &2499013237612281776
@@ -954,10 +964,15 @@ PrefabInstance:
       value: "Der \u201COlympus Mons\u201D ist ein riesiger Vulkan auf dem Mars.
         Er ist der gr\xF6\xDFte Berg im ganzen Sonnensystem und ca. 2,5-mal so gro\xDF,
         wie der h\xF6chste Berg der Erde. Au\xDFerdem gibt es dort riesige Staub-Tornados,
-        die einen Kilometer Durchmesser haben k\xF6nnen! Der Mars ist der Erde am
-        \xE4hnlichsten und Forscher versuchen herauszufinden, ob Menschen eines Tages
-        vielleicht mal auf dem Mars leben k\xF6nnten. "
+        die einen Kilometer Durchmesser haben k\xF6nnen! Der Mars ist der Erde von
+        allen Planeten am \xE4hnlichsten und Forscher versuchen herauszufinden, ob
+        Menschen eines Tages vielleicht mal auf dem Mars leben k\xF6nnten. "
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: b9601b8078175c14bb516a248edc046c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &3068782679346074824
@@ -1050,6 +1065,11 @@ PrefabInstance:
         Jahre lang hell. Zudem behaupten einige Wissenschaftler, dass es dort Diamanten
         regnet, die sich am Himmel aus einem Gas bilden."
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 007b87d52cce57a4d8a8447a1cc4ca2c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &4831767434101179295
@@ -1137,11 +1157,17 @@ PrefabInstance:
     - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
         type: 3}
       propertyPath: infoText
-      value: "Der Uranus z\xE4hlt zu den Eisplaneten, da er zum gr\xF6\xDFten Teil
-        aus gefrorenem Wasser besteht. Auf dem Uranus bleibt es im Sommer rund 40
-        Jahre lang hell. Zudem behaupten einige Wissenschaftler, dass es dort Diamanten
-        regnet, die sich am Himmel aus einem Gas bilden."
+      value: "Auch der Neptun ist ein Eisplanet und von allen Planeten am weitesten
+        von der Sonne entfernt. Auf ihm w\xFCten die st\xE4rksten St\xFCrme mit Geschwindigkeiten
+        von \xFCber 2000 Kilometern pro Stunde. Der Neptun ist der einzige Planet
+        unseres Sonnensystems, den man nicht von der Erde aus mit dem blo\xDFen Auge
+        erkennen kann."
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 288934e0baacd8240ab8f82ed542faa0, type: 3}
     - target: {fileID: 5512589938847766070, guid: a078be97b59257243bb83b47940afa26,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1371,14 +1397,19 @@ PrefabInstance:
       value: "Unser Sonnensystem hei\xDFt \u201CMilchstra\xDFe\u201D. Der Name ist
         aus dem griechischen entstanden, weil das Sonnensystem von weitem aussieht
         wie ein wei\xDFer Fleck, als h\xE4tte jemand Milch versch\xFCttet. Wenn man
-        etwas n\xE4her hinguckt sieht man aber, dass dieser Fleck aus verschiedenen
-        Objekten besteht, die die Forscher bis heute noch untersuchen. Dazu z\xE4hlen
-        auch die Sonne und die acht Planeten, die sie umkreisen. Unsere Sonne ist
-        750-mal so schwer, wie alle Planeten zusammen. Sie sorgt daf\xFCr, dass es
-        auf der Erde hell und warm ist. Die Oberfl\xE4che ist 550\xB0C hei\xDF und
-        gleicht einer Feuerlandschaft, auf der es immer wieder riesige Gas-Explosionen
+        etwas n\xE4her hinguckt sieht man aber, dass dieser Fleck aus ganz vielen
+        verschiedenen Objekten besteht, die die Forscher bis heute noch untersuchen.
+        Dazu z\xE4hlen auch die Sonne und die acht Planeten, die sie umkreisen. Unsere
+        Sonne ist 750-mal so schwer, wie alle Planeten zusammen. Sie sorgt daf\xFCr,
+        dass es auf der Erde hell und warm ist. Die Oberfl\xE4che ist 550\xB0C hei\xDF
+        und gleicht einer Feuerlandschaft, auf der es immer wieder riesige Gas-Explosionen
         gibt. "
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 17acf8733b5e07b4ba7bda9894b927b3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &6186198832995782315
@@ -1472,6 +1503,11 @@ PrefabInstance:
         9,8 Stunden. Zudem wurde dort ein Sturm entdeckt, der bereits seit 340 Jahren
         dort w\xFCtet."
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e953c40f6a5dd749b19198939de689f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!1001 &7022688985302200507
@@ -1566,5 +1602,10 @@ PrefabInstance:
         abk\xFChlt, zieht er sich zusammen. Die Breite des Planeten ist bereits um
         ca. 12 Kilometer kleiner geworden. "
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: caacdeba4947e5640944fca38785557e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}

@@ -35,7 +35,7 @@ public class MeteorFlying : MonoBehaviour
     
     void Update()
     {
-        gameObject.transform.Rotate(Random.Range(0.05f,0.4f),Random.Range(0.05f,0.4f),Random.Range(0.05f,0.4f),Space.Self);
+        gameObject.transform.Rotate(Random.Range(0.01f,0.2f),Random.Range(0.01f,0.2f),Random.Range(0.01f,0.2f),Space.Self);
         gameObject.transform.Translate(fightDirection*Time.deltaTime,Space.World);
         Destroy(gameObject, lifetime);
     }

@@ -903,22 +903,27 @@ PrefabInstance:
     - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
         type: 3}
       propertyPath: infoText
-      value: "Monde sind Gesteinsk\xF6rper, die um Planeten kreisen. Der Mond der
+      value: "Monde sind Gesteinsk\xF6rper, die um Planeten kreisen. Der Mond, der
         die Erde umkreist ist 4mal so klein wie die Erde selbst. Wenn man ihn nachts
-        am Himmel sehen kann liegt das daran, dass der von der Sonne angestrahlt
-        wird, denn Monde k\xF6nnen selbst gar nicht leuchten. 1969 ist der erste
-        Mensch auf dem Mond gewesen: der Amerikaner Neil Armstrong. Seitdem gibt
-        es immer wieder Raummissionen auf dem Mond. Wenn man sich Aufnahmen von Astronauten
+        am Himmel sehen kann liegt das daran, dass er von der Sonne angestrahlt wird,
+        denn Monde k\xF6nnen selbst gar nicht leuchten. 1969 ist der erste Mensch
+        auf dem Mond gewesen: der Amerikaner Neil Armstrong. Seitdem gibt es immer
+        wieder Raummissionen auf dem Mond. Wenn man sich Aufnahmen von Astronauten
         auf dem Mond anguckt sieht es immer so aus, als w\xFCrden sie sich in ganz
         langsam bewegen. Das liegt daran, dass auf dem Mond eine geringere Schwerkraft
-        ist als auf der Erde. Schwerkraft ist das was daf\xFCr sorgt, dass wenn du
-        in die Luft springst du irgendwann wieder auf dem Boden landest. Auf dem
-        Mond sieht das ein bisschen anders aus, wenn man dort hochspringt dauert
-        es viel l\xE4nger bis man wieder auf dem Boden aufkommt. Das f\xFChlt sich
-        dann ein bisschen so an als w\xE4re man Unterwasser. \xDCbrigens gibt es
-        im Weltall nicht nur den einen Mond, der um unsere Erde kreist. Tats\xE4chlich
+        herrscht als auf der Erde. Schwerkraft ist das, was daf\xFCr sorgt, dass
+        wenn du in die Luft springst, du irgendwann wieder auf dem Boden landest.
+        Auf dem Mond sieht das ein bisschen anders aus, wenn man dort hochspringt
+        dauert es viel l\xE4nger bis man wieder auf dem Boden aufkommt. Das f\xFChlt
+        sich dann ein bisschen so an als w\xE4re man Unterwasser. \xDCbrigens gibt
+        es im Weltall nicht nur den einen Mond, der um unsere Erde kreist. Tats\xE4chlich
         haben auch viele andere Planeten Monde und oft sogar mehr als einen. "
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: a184fcad141a4304692898bbef00e05b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!4 &1005306853448439165 stripped
@@ -1017,15 +1022,20 @@ PrefabInstance:
         Seitdem haben sich unz\xE4hlige Lebensformen auf unserem Planeten angesiedelt,
         die sich mit der Zeit immer wieder ver\xE4ndert haben. Die Erde ist der einzige
         bekannte Planet, auf dem es Leben gibt. Die Erde dreht sich permanent um
-        sich selbst. Eine komplette Umdrehung dauert dabei fast einen Tag, also beinahe
-        24 Stunden. Wenn ein Teil der Erde zur Sonne ausgerichtet ist, dann ist es
-        dort hell und warm. Die Menschen bezeichnen das dann als Tag. Und wenn dieser
-        Teil dann von der Sonne weggedreht ist, dann ist es dunkel und k\xFChl, also
-        Nacht. Die Erde dreht sich jedoch nicht nur um die eigene Achse, sondern
-        auch einmal um die Sonne herum. Diese Sonnenumrundung dauert 1 Jahr und durch
-        die verschiedenen Abst\xE4nde die dabei zwischen Sonne und Erde liegen entstehen
-        die verschiedenen Jahreszeiten: Fr\xFChling, Sommer, Herbst und Winter. "
+        sich selbst. Eine komplette Umdrehung dauert dabei beinahe 24 Stunden. Wenn
+        ein Teil der Erde zur Sonne ausgerichtet ist, dann ist es dort hell und warm.
+        Die Menschen bezeichnen das dann als Tag. Und wenn dieser Teil dann von der
+        Sonne weggedreht ist, dann ist es dunkel und k\xFChl, also Nacht. Die Erde
+        dreht sich jedoch nicht nur um die eigene Achse, sondern auch einmal um die
+        Sonne herum. Diese Sonnenumrundung dauert 1 Jahr und durch die verschiedenen
+        Abst\xE4nde, die dabei zwischen Sonne und Erde liegen, entstehen die verschiedenen
+        Jahreszeiten: Fr\xFChling, Sommer, Herbst und Winter. "
       objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b0f406358837e84eac7437d66818e59, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
 --- !u!4 &2173221688311399211 stripped

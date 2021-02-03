@@ -611,8 +611,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroiden:
-  - {fileID: 8954739288199640363, guid: f2a5304f7eeb90f4b8c29304fc3a867f, type: 3}
-  - {fileID: 7035701522499910778, guid: 3764a6954d2d3e446ac56c6a73443288, type: 3}
+  - {fileID: 8774532260795345875, guid: f2a5304f7eeb90f4b8c29304fc3a867f, type: 3}
+  - {fileID: 2522961407310800504, guid: 3764a6954d2d3e446ac56c6a73443288, type: 3}
   - {fileID: 1820242566614442, guid: 8cc7ca4365d84414093dc8147c13e180, type: 3}
 --- !u!114 &2859127487380300765
 MonoBehaviour:
@@ -957,6 +957,29 @@ PrefabInstance:
         type: 3}
       propertyPath: floatingStrenght
       value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: readAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 79d5ec1f1487414409b9b5d68f64b27b, type: 3}
+    - target: {fileID: 5407167472140059862, guid: a078be97b59257243bb83b47940afa26,
+        type: 3}
+      propertyPath: infoText
+      value: "Asteroiden bestehen in der Regel aus Gesteinen, manchmal auch aus Metallen
+        oder anderen Stoffen. Sie bewegen sich wie Planeten in kreisf\xF6rmigen Bahnen
+        um die Sonne, sind aber viel kleiner, sodass wir sie von der Erde aus nicht
+        sehen k\xF6nnen. Die meisten Asteroiden befinden sich im \u201CAsteroideng\xFCrtel\u201D
+        zwischen Mars und Jupiter. Forscher sch\xE4tzen, dass dort mehr als 10 Millionen
+        Asteroiden herumschwirren. Es kann passieren, dass ein Asteroid von seiner
+        Flugbahn abkommt und auf unsere Erde zusteuert, dann nennt man ihn einen
+        Meteoriten. Dass Meteoriten auf der Erde einschlagen, passiert allerdings
+        nur sehr selten, meist weniger als 10-mal pro Jahr. Und selbst dann verursachen
+        sie auch fast nie Schaden.  Fast alle Meteoriten, die auf die Erde zufliegen
+        sind so klein, dass sie beim Landeanflug aufgrund ihrer hohen Geschwindigkeit
+        anfangen zu gl\xFChen und schlie\xDFlich nur als Staub auf die Erde rieseln.
+        Diese gl\xFChenden Meteoriten kann man dann auch von der Erde aus sehen,
+        wir Menschen nennen sie Sternschnuppen. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a078be97b59257243bb83b47940afa26, type: 3}
