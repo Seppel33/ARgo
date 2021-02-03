@@ -8,28 +8,52 @@ public class HideUnhideTextbox : MonoBehaviour
 {
     [SerializeField] private GameObject textBox;
 
-    private Toggle toggleButton;
+    private Image _image;
+    [SerializeField] private Sprite down;
+    [SerializeField] private Sprite up;
+    [SerializeField] private AudioSource readText;
+
+
     private void Start()
     {
-        toggleButton = gameObject.GetComponent<Toggle>();
+        _image = gameObject.GetComponent<Image>();
     }
 
     private void Update()
     {
-        
+        if (textBox.activeInHierarchy)
+        {
+            _image.sprite = down;
+        }
+        else
+        {
+            _image.sprite = up;
+            readText.Stop();
+        }
     }
 
+    public void Hide()
+    {
+        if (textBox.activeInHierarchy)
+        {
+            textBox.SetActive(false);
+        }
+        else
+        {
+            textBox.SetActive(true);
+        }
+    }
     public void HideTextbox(bool tog)
     {
         //Für den Fall, dass die Textbox vor dem Buttonpress aktiv war
-        if (textBox.activeInHierarchy)
+        /*if (textBox.activeInHierarchy)
         {
             tog = true;
         }
         else
         {
             tog = false;
-        }
+        }*/
         
         //Wenn der Toggle true ist, dann soll die Textbox ausgeschaltet werden
         if (tog)
