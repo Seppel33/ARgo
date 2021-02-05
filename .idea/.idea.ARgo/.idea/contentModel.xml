@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Badir\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Badir\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ARgo.107807608.00" t="ExcludeRecursive" />
+    <e p="D:\HSHL_CvD_Badir_Al-Sayyed\Semester 7\Augmented_Reality\Repo\ARgo" t="IncludeRecursive">
+      <e p="ARgo.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="ExampleScenes" t="Include">
+          <e p="ARCollaborationData" t="Include">
+            <e p="AnchorInfoManager.cs" t="Include" />
+            <e p="CollaborationNetworkingIndicator.cs" t="Include" />
+            <e p="CollaborativeSession.cs" t="Include" />
+            <e p="DisplayTrackingState.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CollaborationBuildPostprocessor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ARKitCoachingOverlay" t="Include">
+            <e p="ARKitCoachingOverlay.cs" t="Include" />
+          </e>
+          <e p="CameraGrain" t="Include">
+            <e p="CameraGrain.cs" t="Include" />
+            <e p="CameraGrain.shader" t="Include" />
+          </e>
+          <e p="FaceTracking" t="Include">
+            <e p="DisplayFaceInfo.cs" t="Include" />
+            <e p="ToggleCameraFacingDirection.cs" t="Include" />
+          </e>
+          <e p="ImageTracking" t="Include">
+            <e p="BasicImageTracking" t="Include">
+              <e p="TrackedImageInfoManager.cs" t="Include" />
+            </e>
+            <e p="DynamicLibrary.cs" t="Include" />
+            <e p="Prefabs" t="Include">
+              <e p="FireFliesPrefab" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="FireFly.shader" t="Include" />
+                </e>
+              </e>
+              <e p="FlowerPrefab" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="Vegetation.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="InputSystem" t="Include">
+            <e p="InputSystem_PlaceOnPlane.cs" t="Include" />
+          </e>
+          <e p="LightEstimation" t="Include">
+            <e p="FacingDirectionManager.cs" t="Include" />
+            <e p="Rotator.cs" t="Include" />
+          </e>
+          <e p="Meshing" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="MeshClassificationFracking.cs" t="Include" />
+              <e p="ProjectileLauncher.cs" t="Include" />
+              <e p="ToggleMeshClassification.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="MeshingOverlay.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Object Tracking" t="Include">
+            <e p="Printable Templates" t="Include">
+              <e p="README.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Plane Detection" t="Include">
+            <e p="PlaneClassificationLabeler.cs" t="Include" />
+          </e>
+          <e p="PlaneOcclusion" t="Include">
+            <e p="PlaneOcclusionShader.shader" t="Include" />
+          </e>
+          <e p="PointCloud" t="Include">
+            <e p="ARAllPointCloudPointsParticleVisualizer.cs" t="Include" />
+            <e p="SwitchPointCloudVisualizationMode.cs" t="Include" />
+          </e>
+          <e p="ThermalState" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="FeaturesReporting.cs" t="Include" />
+              <e p="ThermalStateForIOS.cs" t="Include" />
+              <e p="ThermalStateHandling.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ExampleScripts" t="Include">
+          <e p="AnchorCreator.cs" t="Include" />
+          <e p="ARCoreFaceRegionManager.cs" t="Include" />
+          <e p="ARFeatheredPlaneMeshVisualizer.cs" t="Include" />
+          <e p="ARKitBlendShapeVisualizer.cs" t="Include" />
+          <e p="ARWorldMapController.cs" t="Include" />
+          <e p="BasicLightEstimation.cs" t="Include" />
+          <e p="BasicLightEstimationUI.cs" t="Include" />
+          <e p="BoneController.cs" t="Include" />
+          <e p="CameraConfigController.cs" t="Include" />
+          <e p="CameraSwapper.cs" t="Include" />
+          <e p="CpuImageSample.cs" t="Include" />
+          <e p="CustomConfigurationChooser.cs" t="Include" />
+          <e p="DisableVerticalPlanes.cs" t="Include" />
+          <e p="DisplayARSessionInformation.cs" t="Include" />
+          <e p="DisplayDepthImage.cs" t="Include" />
+          <e p="EnvironmentProbeVisualizer.cs" t="Include" />
+          <e p="EyePoseVisualizer.cs" t="Include" />
+          <e p="EyeTrackingUI.cs" t="Include" />
+          <e p="FaceMaterialSwitcher.cs" t="Include" />
+          <e p="FixationPoint2DVisualizer.cs" t="Include" />
+          <e p="FixationPoint3DVisualizer.cs" t="Include" />
+          <e p="HDRLightEstimation.cs" t="Include" />
+          <e p="HDRLightEstimationUI.cs" t="Include" />
+          <e p="HumanBodyTracker.cs" t="Include" />
+          <e p="Logger.cs" t="Include" />
+          <e p="MakeAppearOnPlane.cs" t="Include" />
+          <e p="PlaceMultipleObjectsOnPlane.cs" t="Include" />
+          <e p="PlaceOnPlane.cs" t="Include" />
+          <e p="PlaneDetectionController.cs" t="Include" />
+          <e p="RotationController.cs" t="Include" />
+          <e p="ScaleController.cs" t="Include" />
+          <e p="ScreenSpaceJointVisualizer.cs" t="Include" />
+          <e p="SupportChecker.cs" t="Include" />
+          <e p="TestBodyAnchorScale.cs" t="Include" />
+          <e p="UX" t="Include">
+            <e p="ActiveMenu.cs" t="Include" />
+            <e p="ARSceneSelectUI.cs" t="Include" />
+            <e p="BackButton.cs" t="Include" />
+            <e p="CheckAvailableFeatures.cs" t="Include" />
+            <e p="CheckRuntimeDepth.cs" t="Include" />
+            <e p="Tooltip.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ExampleShaders" t="Include">
+          <e p="DepthGradient.shader" t="Include" />
+          <e p="FeatheredPlaneShader.shader" t="Include" />
+          <e p="HumanStencil.shader" t="Include" />
+          <e p="Normal.shader" t="Include" />
+          <e p="NormalOverlay.shader" t="Include" />
+        </e>
+        <e p="LowPolyEarth" t="Include">
+          <e p="EarthSpinScript.cs" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="NativeShare" t="Include">
+            <e p="Android" t="Include">
+              <e p="NSCallbackHelper.cs" t="Include" />
+              <e p="NSShareResultCallbackAndroid.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="NSPostProcessBuild.cs" t="Include" />
+            </e>
+            <e p="iOS" t="Include">
+              <e p="NSShareResultCallbackiOS.cs" t="Include" />
+            </e>
+            <e p="NativeShare.cs" t="Include" />
+            <e p="README.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
+          <e p="ButtonScripts.cs" t="Include" />
+          <e p="CustomTrail.cs" t="Include" />
+          <e p="D.cs" t="Include" />
+          <e p="HideUnhideTextbox.cs" t="Include" />
+          <e p="InfoBoxManager.cs" t="Include" />
+          <e p="instatiateMeteors.cs" t="Include" />
+          <e p="LandscapePortrait.cs" t="Include" />
+          <e p="MeteorFlying.cs" t="Include" />
+          <e p="PathCreator.cs" t="Include" />
+          <e p="PathFollower.cs" t="Include" />
+          <e p="PrefabSwitcher.cs" t="Include" />
+          <e p="RotateAround.cs" t="Include" />
+          <e p="RotationFloating.cs" t="Include" />
+          <e p="ScreenCapture.cs" t="Include" />
+          <e p="Sharing.cs" t="Include" />
+          <e p="SolarContentManager.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="ScreenspaceTexture.shader" t="Include" />
+          <e p="sunEmis.shader" t="Include" />
+        </e>
+        <e p="Standard Assets" t="Include">
+          <e p="ParticleSystems" t="Include">
+            <e p="ParticleSystemsGuidelines.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AfterburnerPhysicsForce.cs" t="Include" />
+              <e p="ExplosionFireAndDebris.cs" t="Include" />
+              <e p="ExplosionPhysicsForce.cs" t="Include" />
+              <e p="ExtinguishableParticleSystem.cs" t="Include" />
+              <e p="FireLight.cs" t="Include" />
+              <e p="Hose.cs" t="Include" />
+              <e p="ParticleSystemMultiplier.cs" t="Include" />
+              <e p="SmokeParticles.cs" t="Include" />
+              <e p="WaterHoseParticles.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="PriorityParticleAdd.shader" t="Include" />
+              <e p="PriorityParticleAddSoft.shader" t="Include" />
+              <e p="PriorityParticleAlpha.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="NativeShare.Editor.csproj" t="IncludeRecursive" />
+      <e p="NativeShare.Runtime.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

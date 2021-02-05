@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Toggle = UnityEngine.UIElements.Toggle;
 
-public class Texts : MonoBehaviour
+public class InfoBoxManager : MonoBehaviour
 {
     [SerializeField] private String infoText;
     
@@ -16,7 +16,6 @@ public class Texts : MonoBehaviour
     private GameObject raycastHitObject;
     [SerializeField] private AudioClip readAudio;
     
-    private GameObject[] infobuttons;
     private GameObject[] arPrefabs;
     
     
@@ -49,25 +48,14 @@ public class Texts : MonoBehaviour
                 
                 infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
                 raycastHitObject = Hit.transform.gameObject;
-                //DisplayText(Hit.transform.gameObject.GetComponent<Texts>().infoText);
-                infobox.text = raycastHitObject.GetComponent<Texts>().infoText;
+                infobox.text = raycastHitObject.GetComponent<InfoBoxManager>().infoText;
                 
                 //infoboxAudio = gameObject.GetComponent<AudioSource>();
-                infoboxAudioSource.clip = raycastHitObject.GetComponent<Texts>().readAudio;
+                infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
                 infoboxAudioSource.Stop();
                 infoboxAudioSource.Play();
             }
         }
-    }
-
-    public void DisplayText(String txt)
-    {
-        //InfoText anzeigen
-        infobox.text = txt;
-        
-        //AudioInfobox Abspielen
-        //infoboxAudio.Stop();
-        //infoboxAudio.Play();
     }
 
     public void InfoAudioPlay()
@@ -80,50 +68,5 @@ public class Texts : MonoBehaviour
         {
             infoboxAudioSource.Play();
         }
-    }
-
-    //In eigene Klasse
-    public void TurnBulbOff(bool tog)
-    {
-        infobuttons = GameObject.FindGameObjectsWithTag("Bulb");
-        if (tog)
-        {
-            foreach(GameObject go in infobuttons)
-            {
-                go.transform.GetChild(0).gameObject.SetActive(false);
-            }
-        }
-        else
-        {
-            foreach(GameObject go in infobuttons)
-            {
-                go.transform.GetChild(0).gameObject.SetActive(true);
-            }
-        }
-    }
-
-    //In eigene Klasse
-    public void SoundOnOff(bool tog)
-    {
-        arPrefabs = GameObject.FindGameObjectsWithTag("ARPrefab");
-        if (tog)
-        {
-            foreach (GameObject go in arPrefabs)
-            {
-                go.GetComponent<AudioSource>().Pause();
-            }
-        }
-        else
-        {
-            foreach (GameObject go in arPrefabs)
-            {
-                go.GetComponent<AudioSource>().UnPause();
-            }
-        }
-    }
-
-    public void Tutorial(bool tog)
-    {
-        
     }
 }
