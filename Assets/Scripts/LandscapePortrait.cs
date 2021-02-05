@@ -17,9 +17,9 @@ public class LandscapePortrait : MonoBehaviour
         {
             infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
-        else if (Screen.orientation == ScreenOrientation.Portrait)
+        /*else if (Screen.orientation == ScreenOrientation.Portrait)
         {
             infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
-        }
+        }*/
     }
 }
