@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 1526374657}
   - component: {fileID: 1526374656}
   - component: {fileID: 1526374655}
+  - component: {fileID: 1526374658}
   m_Layer: 5
   m_Name: planet
   m_TagString: Untagged
@@ -537,6 +538,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526374653}
   m_CullTransparentMesh: 0
+--- !u!114 &1526374658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526374653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03540e3b39311524ca0547f236eda6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1725240639
 GameObject:
   m_ObjectHideFlags: 0
