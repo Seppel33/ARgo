@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 5407167472137997213}
   m_Layer: 0
   m_Name: InfoButton3D
-  m_TagString: Bulb
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

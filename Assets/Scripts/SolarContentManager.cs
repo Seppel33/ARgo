@@ -28,6 +28,19 @@ public class SolarContentManager : MonoBehaviour
     {
         PrefabScale = transform.parent.transform.localScale;
         ShowRealValue = !ShowRealValue;
+        if(ShowRealValue){
+            GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
+            foreach (GameObject bulb in bulbs)
+            {
+             bulb.SetActive(false);   
+            }
+        }else{
+            GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
+            foreach (GameObject bulb in bulbs)
+            {
+             bulb.SetActive(true);   
+            }
+        }
     }
     
     private void CalculateRelSunMove()
