@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonScripts : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ButtonScripts : MonoBehaviour
     [SerializeField] private GameObject tutorial;
     [SerializeField] private GameObject[] settingsToggle;
     [SerializeField] private GameObject[] tutorials;
+    [SerializeField] private GameObject tutorialToggle;
 
 
     public void TurnBulbOff(bool tog)
@@ -71,12 +73,21 @@ public class ButtonScripts : MonoBehaviour
                 go.SetActive(true);
             }
         }
-        else
+        else if (!tog)
         {
             foreach (GameObject go in settingsToggle)
             {
                 go.SetActive(false);
             }
+            foreach (GameObject go in tutorials)
+            {
+                go.SetActive(false);
+            }
+        }
+
+        if (!tutorialToggle.activeInHierarchy)
+        {
+            tutorialToggle.GetComponent<Toggle>().isOn = false;
         }
     }
 }

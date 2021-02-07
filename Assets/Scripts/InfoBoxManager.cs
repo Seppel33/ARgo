@@ -36,24 +36,34 @@ public class InfoBoxManager : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
-                //Am besten, wenn man hiden und showen kann wann man will.
-                infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
-                for (int i = 0; i < infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount; i++)
+                if (Screen.orientation == ScreenOrientation.Portrait)
                 {
-                    if (!infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.activeInHierarchy)
+                    infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    for (int i = 0; i < infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount; i++)
                     {
-                        infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(true);
+                        if (!infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.activeInHierarchy)
+                        {
+                            infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(true);
+                        }
                     }
+                
+                    infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
+                    raycastHitObject = Hit.transform.gameObject;
+                    infobox.text = raycastHitObject.GetComponent<InfoBoxManager>().infoText;
+                
+                    infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
+                    infoboxAudioSource.Stop();
+                    infoboxAudioSource.Play();
+                }
+                else if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
+                {
+                    raycastHitObject = Hit.transform.gameObject;
+
+                    infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
+                    infoboxAudioSource.Stop();
+                    infoboxAudioSource.Play();
                 }
                 
-                infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
-                raycastHitObject = Hit.transform.gameObject;
-                infobox.text = raycastHitObject.GetComponent<InfoBoxManager>().infoText;
-                
-                //infoboxAudio = gameObject.GetComponent<AudioSource>();
-                infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
-                infoboxAudioSource.Stop();
-                infoboxAudioSource.Play();
             }
         }
     }
