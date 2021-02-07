@@ -6,6 +6,7 @@ public class instatiateMeteors : MonoBehaviour
 {
    
     public  GameObject [] asteroiden;
+    public List <GameObject> instanzen; 
     
     
 
@@ -19,9 +20,19 @@ public class instatiateMeteors : MonoBehaviour
     IEnumerator startMeteors()
     {
         while (gameObject.active){
-            GameObject.Instantiate(asteroiden[(int)(Random.Range(1f,3f))]);
-            yield return new WaitForSeconds(Random.Range(0.1f,2f));
+            GameObject asteor = GameObject.Instantiate(asteroiden[(int)(Random.Range(1f,3f))]);
+            instanzen.Add(asteor);
+            yield return new WaitForSeconds(Random.Range(0.1f,1f));
+        }
+    }
 
+
+    void OnDestroy()
+    {
+        foreach (GameObject go in instanzen)
+        {
+            Destroy(go);
         }
     }
 }
+
