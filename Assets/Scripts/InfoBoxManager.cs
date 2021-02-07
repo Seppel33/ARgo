@@ -28,10 +28,8 @@ public class InfoBoxManager : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log(infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount);
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
-            
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
