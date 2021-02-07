@@ -36,13 +36,15 @@ public class ButtonScripts : MonoBehaviour
     {
         _audioSource = GameObject.FindWithTag("ARPrefab").GetComponent<AudioSource>();
 
-        if (tog && _audioSource.isPlaying)
+        if (tog && GlobalDataManager.ambienceIsPlaying)
         {
             _audioSource.Stop();
+            GlobalDataManager.ambienceIsPlaying = false;
         }
         else
         {
             _audioSource.Play();
+            GlobalDataManager.ambienceIsPlaying = true;
         } 
     }
 

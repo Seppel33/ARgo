@@ -599,6 +599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9088054831769039957}
   - component: {fileID: 1141955525619246059}
+  - component: {fileID: -8817424102480292145}
   m_Layer: 0
   m_Name: P4 Solarsystem
   m_TagString: ARPrefab
@@ -718,6 +719,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8817424102480292145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9088054831769039951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca145593f8da454da536a30793f5fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambienceAudioSource: {fileID: 0}
 --- !u!1 &9088054831769039986
 GameObject:
   m_ObjectHideFlags: 0
