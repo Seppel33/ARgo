@@ -29,8 +29,8 @@ MonoBehaviour:
       m_GuidLow: 4996582504488098540
       m_GuidHigh: 9073953501191552641
     m_SerializedTextureGuid:
-      m_GuidLow: 2568377431718806708
-      m_GuidHigh: 7215401586773745993
+      m_GuidLow: 960570148424656465
+      m_GuidHigh: 17435768444049324122
     m_Size: {x: 0.20004033, y: 0.1}
     m_SpecifySize: 1
     m_Name: P2
@@ -39,8 +39,8 @@ MonoBehaviour:
       m_GuidLow: 5603606708348548233
       m_GuidHigh: 17636225504450342816
     m_SerializedTextureGuid:
-      m_GuidLow: 13723856185550131793
-      m_GuidHigh: 9530383955341467912
+      m_GuidLow: 2568377431718806708
+      m_GuidHigh: 7215401586773745993
     m_Size: {x: 0.20004033, y: 0.1}
     m_SpecifySize: 1
     m_Name: P3
@@ -49,8 +49,8 @@ MonoBehaviour:
       m_GuidLow: 5059697255115739252
       m_GuidHigh: 13877217784984549796
     m_SerializedTextureGuid:
-      m_GuidLow: 13710327260652160267
-      m_GuidHigh: 6066903909428126920
+      m_GuidLow: 13723856185550131793
+      m_GuidHigh: 9530383955341467912
     m_Size: {x: 0.20004033, y: 0.1}
     m_SpecifySize: 1
     m_Name: P4
@@ -59,8 +59,8 @@ MonoBehaviour:
       m_GuidLow: 4868914861616658313
       m_GuidHigh: 9541824528002170768
     m_SerializedTextureGuid:
-      m_GuidLow: 12363665366415977131
-      m_GuidHigh: 1637227989305819963
+      m_GuidLow: 13710327260652160267
+      m_GuidHigh: 6066903909428126920
     m_Size: {x: 0.20004033, y: 0.1}
     m_SpecifySize: 1
     m_Name: P5
@@ -69,8 +69,8 @@ MonoBehaviour:
       m_GuidLow: 4615030896892928942
       m_GuidHigh: 13033672422085837465
     m_SerializedTextureGuid:
-      m_GuidLow: 14047947283087507048
-      m_GuidHigh: 3338129464844035818
+      m_GuidLow: 12363665366415977131
+      m_GuidHigh: 1637227989305819963
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
     m_Name: P6
@@ -79,9 +79,19 @@ MonoBehaviour:
       m_GuidLow: 5278794683201265239
       m_GuidHigh: 12616080511733276313
     m_SerializedTextureGuid:
-      m_GuidLow: 16912417630388856147
-      m_GuidHigh: 9341882938881619355
+      m_GuidLow: 14047947283087507048
+      m_GuidHigh: 3338129464844035818
     m_Size: {x: 0.20004033, y: 0.1}
     m_SpecifySize: 1
     m_Name: P7
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5549527458422075728
+      m_GuidHigh: 10083115518989928627
+    m_SerializedTextureGuid:
+      m_GuidLow: 16912417630388856147
+      m_GuidHigh: 9341882938881619355
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: ARGO-Doppelseiten8
     m_Texture: {fileID: 0}

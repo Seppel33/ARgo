@@ -1,0 +1,7 @@
+f3d26e0b34a6467cae435d818b5dc367|Assets/Images/Buchseiten/ARGO_Cover.jpg|0.1
+96f1daec6d504557813eef2aa228ed7d|Assets/Images/Buchseiten/Doppelseiten/ARGO-Doppelseiten3.jpg|0.20004
+b01c7489029c4dc4a06f72d3a775c0f4|Assets/Images/Buchseiten/Doppelseiten/ARGO-Doppelseiten4.jpg|0.20004
+9a315074a7d84637a4b9bc000dc895c0|Assets/Images/Buchseiten/Doppelseiten/ARGO-Doppelseiten5.jpg|0.20004
+2047f789dc45439190bfad7cda5e6b84|Assets/Images/Buchseiten/Doppelseiten/ARGO-Doppelseiten6.jpg|0.20004
+34c163aee226400b99423b3503e8e0b4|Assets/Images/Buchseiten/Doppelseiten/ARGO-Doppelseiten7.jpg
+ce6e9e570bcb4942991e97ef615215af|Assets/Images/Buchseiten/Doppelseiten/ARGO-Doppelseiten8.jpg|0.20004
