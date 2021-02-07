@@ -8,6 +8,7 @@ public class ButtonScripts : MonoBehaviour
     private GameObject[] _infobuttons;
     [SerializeField] private GameObject tutorial;
     [SerializeField] private GameObject[] settingsToggle;
+    [SerializeField] private GameObject[] tutorials;
 
 
     public void TurnBulbOff(bool tog)
@@ -45,13 +46,19 @@ public class ButtonScripts : MonoBehaviour
 
     public void TutorialOff(bool tog)
     {
-        if (tog && tutorial.activeInHierarchy)
+        if (tog)
         {
-            tutorial.SetActive(false);
+            foreach (GameObject go in tutorials)
+            {
+                go.SetActive(true);
+            }
         }
-        else
+        else if (!tog)
         {
-            tutorial.SetActive(true);
+            foreach (GameObject go in tutorials)
+            {
+                go.SetActive(false);
+            }
         }
     }
     
