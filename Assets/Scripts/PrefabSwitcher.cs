@@ -13,15 +13,16 @@ namespace UnityEngine.XR.ARFoundation
         public XRReferenceImageLibrary m_ImageLibrary;
         [SerializeField]
         GameObject[] m_Prefabs = new GameObject[8];
-        Dictionary<string, GameObject> m_InstatiatedPrefabs;
+        //Dictionary<string, GameObject> m_InstatiatedPrefabs;
 
         string lastImage = "";
+        GameObject pageContentBefore;
 
         private void Awake()
         {
             m_TrackedImageManager = GetComponent<ARTrackedImageManager>();
             m_TrackedImageManager.requestedMaxNumberOfMovingImages = 1;
-            m_InstatiatedPrefabs = new Dictionary<string, GameObject>();
+            //m_InstatiatedPrefabs = new Dictionary<string, GameObject>();
         }
 
         void OnEnable() => m_TrackedImageManager.trackedImagesChanged += OnChanged;
@@ -39,20 +40,25 @@ namespace UnityEngine.XR.ARFoundation
                 var minLocalScalar = Mathf.Min(newImage.size.x, newImage.size.y); // /2
                 
                 newImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
-                
+
                 //add new Prefab
+                /*
                 int i = m_ImageLibrary.indexOf(newImage.referenceImage);
                 if( i <= m_Prefabs.Length)
                 {
                     GameObject prefab = m_Prefabs[i];
-                    m_InstatiatedPrefabs.Add(newImage.referenceImage.name ,Instantiate(prefab, newImage.transform));
+                    //m_InstatiatedPrefabs.Add(newImage.referenceImage.name ,Instantiate(prefab, newImage.transform));
                     //m_InstatiatedPrefabs[newImage.referenceImage.name].gameObject.transform.Rotate(new Vector3(1, 0, 0), 90f);
-                    m_InstatiatedPrefabs[newImage.referenceImage.name].name = newImage.referenceImage.name;
+                    //m_InstatiatedPrefabs[newImage.referenceImage.name].name = newImage.referenceImage.name;
+
+                    GameObject page = Instantiate(prefab, newImage.transform);
+                    page.name = newImage.referenceImage.name;
+
                     ChangePage(newImage);
-                    
                     GlobalDataManager.firstImageTracked = true;
-                }
-                D.Log("" + minLocalScalar + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.localScale + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.lossyScale);
+                }*/
+                ChangePage(newImage);
+                //D.Log("" + minLocalScalar + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.localScale + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.lossyScale);
                 //D.LogNR("OnChanged.added " + newImage.referenceImage.name);
             }
 
@@ -85,12 +91,26 @@ namespace UnityEngine.XR.ARFoundation
                 //deactivte old page prefab
                 if(lastImage.Length > 0)
                 {
-                    m_InstatiatedPrefabs[lastImage].SetActive(false);
+                    //m_InstatiatedPrefabs[lastImage].SetActive(false);
+                    Destroy(pageContentBefore.gameObject);
                 }
 
                 //activete new page prefab
-                m_InstatiatedPrefabs[newPage.referenceImage.name].SetActive(true);
+                //m_InstatiatedPrefabs[newPage.referenceImage.name].SetActive(true);
+                int i = m_ImageLibrary.indexOf(newPage.referenceImage);
+                if (i <= m_Prefabs.Length)
+                {
+                    GameObject prefab = m_Prefabs[i];
+                    //m_InstatiatedPrefabs.Add(newImage.referenceImage.name ,Instantiate(prefab, newImage.transform));
+                    //m_InstatiatedPrefabs[newImage.referenceImage.name].gameObject.transform.Rotate(new Vector3(1, 0, 0), 90f);
+                    //m_InstatiatedPrefabs[newImage.referenceImage.name].name = newImage.referenceImage.name;
 
+                    GameObject page = Instantiate(prefab, newPage.transform);
+                    page.name = newPage.referenceImage.name;
+
+                    pageContentBefore = new GameObject();
+                    pageContentBefore = page;
+                }
                 lastImage = newPage.referenceImage.name;
             }
         }
