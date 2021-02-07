@@ -11,7 +11,18 @@ public class ButtonScripts : MonoBehaviour
     [SerializeField] private GameObject[] settingsToggle;
     [SerializeField] private GameObject[] tutorials;
     [SerializeField] private GameObject tutorialToggle;
+    [SerializeField] private GameObject scanPage;
 
+    private bool switcher = true;
+    private void Update()
+    {
+        
+        if (switcher && GlobalDataManager.firstImageTracked)
+        {
+            scanPage.SetActive(false);
+            switcher = false;
+        }
+    }
 
     public void TurnBulbOff(bool tog)
     {
@@ -36,13 +47,15 @@ public class ButtonScripts : MonoBehaviour
     {
         _audioSource = GameObject.FindWithTag("ARPrefab").GetComponent<AudioSource>();
 
-        if (tog && _audioSource.isPlaying)
+        if (tog && GlobalDataManager.ambienceIsPlaying)
         {
             _audioSource.Stop();
+            GlobalDataManager.ambienceIsPlaying = false;
         }
         else
         {
             _audioSource.Play();
+            GlobalDataManager.ambienceIsPlaying = true;
         } 
     }
 

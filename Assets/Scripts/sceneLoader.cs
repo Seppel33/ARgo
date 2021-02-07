@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class sceneLoader : MonoBehaviour
 {
+    AsyncOperation loadingOperation;
     public void loadGeneral(){
-        SceneManager.LoadScene("GeneralScene");
+        loadingOperation = SceneManager.LoadSceneAsync("GeneralScene", LoadSceneMode.Single);
+
+        if(loadingOperation.isDone){
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("GeneralScene"));
+        }
     }
 }

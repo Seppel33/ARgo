@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2268506911352799877}
   - component: {fileID: 9304998835357596}
+  - component: {fileID: -3614032141454935252}
   m_Layer: 0
   m_Name: P5 MeteorField
   m_TagString: ARPrefab
@@ -130,6 +131,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3614032141454935252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268506911352799903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca145593f8da454da536a30793f5fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambienceAudioSource: {fileID: 0}
 --- !u!1 &2974522408784358409
 GameObject:
   m_ObjectHideFlags: 0

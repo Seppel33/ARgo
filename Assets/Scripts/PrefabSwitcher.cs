@@ -49,6 +49,8 @@ namespace UnityEngine.XR.ARFoundation
                     //m_InstatiatedPrefabs[newImage.referenceImage.name].gameObject.transform.Rotate(new Vector3(1, 0, 0), 90f);
                     m_InstatiatedPrefabs[newImage.referenceImage.name].name = newImage.referenceImage.name;
                     ChangePage(newImage);
+                    
+                    GlobalDataManager.firstImageTracked = true;
                 }
                 D.Log("" + minLocalScalar + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.localScale + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.lossyScale);
                 //D.LogNR("OnChanged.added " + newImage.referenceImage.name);
@@ -62,6 +64,7 @@ namespace UnityEngine.XR.ARFoundation
                 if(updatedImage.trackingState == TrackingState.Tracking)
                 {
                     ChangePage(updatedImage);
+                    
                 }
 
                 //D.LogNR("OnChanged.updated " + updatedImage.referenceImage.name + " " + updatedImage.trackingState);

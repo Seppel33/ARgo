@@ -486,6 +486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5658016570088212738}
   - component: {fileID: 8729568469461771966}
+  - component: {fileID: 888417319163651629}
   m_Layer: 0
   m_Name: P1 Cover
   m_TagString: ARPrefab
@@ -605,6 +606,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &888417319163651629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5658016570088212760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca145593f8da454da536a30793f5fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ambienceAudioSource: {fileID: 0}
 --- !u!1 &8692255142833432016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,15 +2033,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30, type: 3}
---- !u!1 &862950602239502634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
-    type: 3}
-  m_PrefabInstance: {fileID: 520368968192283771}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &50104387112121232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
+    type: 3}
+  m_PrefabInstance: {fileID: 520368968192283771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &862950602239502634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d3d0fb2ad8a7264688e4ec3a8d69a30,
     type: 3}
   m_PrefabInstance: {fileID: 520368968192283771}
   m_PrefabAsset: {fileID: 0}
