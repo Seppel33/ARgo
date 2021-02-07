@@ -36,6 +36,7 @@ public class InfoBoxManager : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
+                if(Hit.transform.tag.Equals("Bulb")){
                 if (Screen.orientation == ScreenOrientation.Portrait)
                 {
                     infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
@@ -64,6 +65,7 @@ public class InfoBoxManager : MonoBehaviour
                     infoboxAudioSource.Play();
                 }
                 
+                }
             }
         }
     }

@@ -379,7 +379,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 484736baeb12e4349a06d48fefc78e55,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Bulb
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 484736baeb12e4349a06d48fefc78e55,
         type: 3}
