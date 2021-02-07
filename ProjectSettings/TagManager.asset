@@ -9,6 +9,7 @@ TagManager:
   - InfoText
   - Bulb
   - ARPrefab
+  - GazeDetector
   layers:
   - Default
   - TransparentFX
