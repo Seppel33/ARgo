@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &5407167472140059856
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173360517755538572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 5.9315205
+  m_Height: 15.550043
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.37873387, z: 0}
+--- !u!114 &5407167472140059862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5173360517755538572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea188338b149d9f4b93318078a28e119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoText: "Unsere Sonne ist 750-mal so schwer, wie alle Planeten zusammen. Die
+    Sie sorgt daf\xFCr, dass es auf der Erde hell und warm ist. Die Oberfl\xE4che
+    ist 550\xB0C hei\xDF und gleicht einer Feuerlandschaft auf der es immer wieder
+    riesige Gas-Explosionen gibt."
+  readAudio: {fileID: 8300000, guid: 59dc2bd1b8f7c3d448d215ad5252bc96, type: 3}
 --- !u!1 &5407167471089376256
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,8 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoText: 
-  infoboxAudioSource: {fileID: 0}
-  raycastHitObject: {fileID: 0}
   readAudio: {fileID: 0}
 --- !u!82 &5407167471089376262
 AudioSource:
@@ -265,39 +294,6 @@ MonoBehaviour:
   floatingStrenght: 0.1
   floatingSpeed: 1
   firstYPos: 0
---- !u!136 &5407167472140059856
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5173360517755538572}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 4
-  m_Height: 14
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.96, z: 0}
---- !u!114 &5407167472140059862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5173360517755538572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea188338b149d9f4b93318078a28e119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  infoText: "Unsere Sonne ist 750-mal so schwer, wie alle Planeten zusammen. Die
-    Sie sorgt daf\xFCr, dass es auf der Erde hell und warm ist. Die Oberfl\xE4che
-    ist 550\xB0C hei\xDF und gleicht einer Feuerlandschaft auf der es immer wieder
-    riesige Gas-Explosionen gibt."
-  infoboxAudioSource: {fileID: 0}
-  raycastHitObject: {fileID: 0}
-  readAudio: {fileID: 8300000, guid: 59dc2bd1b8f7c3d448d215ad5252bc96, type: 3}
 --- !u!1001 &5407167471970202077
 PrefabInstance:
   m_ObjectHideFlags: 0

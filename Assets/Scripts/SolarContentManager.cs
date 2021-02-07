@@ -5,7 +5,7 @@ using UnityEngine;
 public class SolarContentManager : MonoBehaviour
 {
     public static bool ShowRealValue;
-    public static bool PauseSim;
+    
     public static Vector3 PrefabScale;
     public GameObject Sun;
     public static Vector3 relativeSunMovement;
@@ -14,7 +14,7 @@ public class SolarContentManager : MonoBehaviour
     void Start()
     {
         ShowRealValue = false;
-        PauseSim = false;
+        
         PrefabScale = transform.parent.transform.localScale;
         oldSunPos = Sun.transform.position;
     }
@@ -22,18 +22,15 @@ public class SolarContentManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        calculateRelSunMove();
+        CalculateRelSunMove();
     }
     public void ChangeMode()
     {
         PrefabScale = transform.parent.transform.localScale;
         ShowRealValue = !ShowRealValue;
     }
-    public void PauseScene()
-    {
-        PauseSim = !PauseSim;
-    }
-    private void calculateRelSunMove()
+    
+    private void CalculateRelSunMove()
     {
         relativeSunMovement = Sun.transform.position - oldSunPos;
         oldSunPos = Sun.transform.position;

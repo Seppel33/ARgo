@@ -29,7 +29,7 @@ public class RotateAround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!SolarContentManager.PauseSim)
+        if (!GlobalDataManager.PauseSim)
         {
             transform.Rotate(Vector3.up, speed * Time.deltaTime * 500);
             transform.GetChild(0).transform.Rotate(Vector3.up, selfRotate * Time.deltaTime * 500);
