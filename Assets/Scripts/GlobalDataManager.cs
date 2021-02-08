@@ -11,6 +11,8 @@ public class GlobalDataManager : MonoBehaviour
     public static bool firstImageTracked;
 
     public static bool onPageChanged;
+
+    public static bool infoButtonsOff;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class GlobalDataManager : MonoBehaviour
         PauseSim = false;
         ambienceIsPlaying = true;
         firstImageTracked = false;
+        infoButtonsOff = false;
     }
     
     public void PauseScene()
