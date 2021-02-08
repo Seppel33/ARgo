@@ -34,34 +34,35 @@ public class InfoBoxManager : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
-                if(Hit.transform.tag.Equals("Bulb"))
+                if(Hit.transform.tag.Equals("Bulb")){
+                if (Screen.orientation == ScreenOrientation.Portrait)
                 {
-                    if (Screen.orientation == ScreenOrientation.Portrait)
+                    infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    for (int i = 0; i < infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount; i++)
                     {
-                        infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(true);
-                        for (int i = 0; i < infoBoxGameObject.transform.GetChild(0).gameObject.transform.childCount; i++)
+                        if (!infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.activeInHierarchy)
                         {
-                            if (!infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.activeInHierarchy)
-                            {
-                                infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(true);
-                            }
+                            infoBoxGameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.SetActive(true);
                         }
-                        infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
-                        raycastHitObject = Hit.transform.gameObject;
-                        infobox.text = raycastHitObject.GetComponent<InfoBoxManager>().infoText;
+                    }
                 
-                        infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
-                        infoboxAudioSource.Stop();
-                        infoboxAudioSource.Play();
-                    }
-                    else if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
-                    {
-                        raycastHitObject = Hit.transform.gameObject;
+                    infobox = GameObject.FindWithTag("InfoText").GetComponent<Text>();
+                    raycastHitObject = Hit.transform.gameObject;
+                    infobox.text = raycastHitObject.GetComponent<InfoBoxManager>().infoText;
+                
+                    infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
+                    infoboxAudioSource.Stop();
+                    infoboxAudioSource.Play();
+                }
+                else if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
+                {
+                    raycastHitObject = Hit.transform.gameObject;
 
-                        infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
-                        infoboxAudioSource.Stop();
-                        infoboxAudioSource.Play();
-                    }
+                    infoboxAudioSource.clip = raycastHitObject.GetComponent<InfoBoxManager>().readAudio;
+                    infoboxAudioSource.Stop();
+                    infoboxAudioSource.Play();
+                }
+                
                 }
             }
         }
