@@ -10,6 +10,7 @@ public class SolarContentManager : MonoBehaviour
     public GameObject Sun;
     public static Vector3 relativeSunMovement;
     private Vector3 oldSunPos;
+    private List<GameObject> deletedBulbs = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +33,15 @@ public class SolarContentManager : MonoBehaviour
             GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
             foreach (GameObject bulb in bulbs)
             {
-             bulb.SetActive(false);   
+                deletedBulbs.Add(bulb);
+                bulb.SetActive(false);
             }
         }else{
-            GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
-            foreach (GameObject bulb in bulbs)
+            //GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
+            foreach (GameObject bulb in deletedBulbs)
             {
-             bulb.SetActive(true);   
+                bulb.SetActive(true);
+                deletedBulbs = new List<GameObject>();
             }
         }
     }
