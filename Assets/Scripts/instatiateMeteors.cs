@@ -5,10 +5,13 @@ using UnityEngine;
 public class instatiateMeteors : MonoBehaviour
 {
    
+   //Array der verfügbaren Meteror-Prefabs
     public  GameObject [] asteroiden;
+
+    //Liste, in der die Meteor-Instanzen gesammelt werden
     public List <GameObject> instanzen; 
     
-    
+
 
     void Start(){
         
@@ -16,7 +19,7 @@ public class instatiateMeteors : MonoBehaviour
         StartCoroutine(startMeteors());
     }
     
-    
+    //Eines von 3 Meteor Prefabs wird zufällig ausgewählt, instanziiert und der instanzen-Liste zugewiesen
     IEnumerator startMeteors()
     {
         while (gameObject.active){
@@ -26,7 +29,7 @@ public class instatiateMeteors : MonoBehaviour
         }
     }
 
-
+    //Wenn das Prefab beim Umblättern zerstört wird, wird die Liste der Meteor-Instanzen auch zerstört
     void OnDestroy()
     {
         foreach (GameObject go in instanzen)

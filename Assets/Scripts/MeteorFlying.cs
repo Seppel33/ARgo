@@ -39,6 +39,7 @@ public class MeteorFlying : MonoBehaviour
         gameObject.transform.Translate(fightDirection*Time.deltaTime,Space.World);
         Destroy(gameObject, lifetime);
 
+        //Wenn wenn das eigene Prefab nicht mehr aktiv in der Szene ist, werden die noch in der Szene befindlichen Meteoriten zerstört
         if(!GameObject.Find("P5 MeteorField(Clone)").activeInHierarchy){
             Destroy(gameObject);
         }

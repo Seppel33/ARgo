@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class sceneLoader : MonoBehaviour
 {
     AsyncOperation loadingOperation;
+
+    //Die General Scene wird im Hintergrund geladen, während die Startbildschirm Szene die Animation abspielt
     public void loadGeneral(){
         loadingOperation = SceneManager.LoadSceneAsync("GeneralScene", LoadSceneMode.Single);
 
