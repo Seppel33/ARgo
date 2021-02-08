@@ -55,9 +55,10 @@ namespace UnityEngine.XR.ARFoundation
                     page.name = newImage.referenceImage.name;
 
                     ChangePage(newImage);
-                    GlobalDataManager.firstImageTracked = true;
+                    
                 }*/
                 ChangePage(newImage);
+                GlobalDataManager.firstImageTracked = true;
                 //D.Log("" + minLocalScalar + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.localScale + "; " + m_InstatiatedPrefabs[newImage.referenceImage.name].transform.lossyScale);
                 //D.LogNR("OnChanged.added " + newImage.referenceImage.name);
             }
