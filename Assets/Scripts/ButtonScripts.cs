@@ -7,7 +7,6 @@ public class ButtonScripts : MonoBehaviour
 {
     private AudioSource _audioSource;
     private GameObject[] _infobuttons;
-    [SerializeField] private GameObject tutorial;
     [SerializeField] private GameObject[] settingsToggle;
     [SerializeField] private GameObject[] tutorials;
     [SerializeField] private GameObject tutorialToggle;
