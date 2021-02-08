@@ -112,6 +112,7 @@ namespace UnityEngine.XR.ARFoundation
                     pageContentBefore = page;
                 }
                 lastImage = newPage.referenceImage.name;
+                GlobalDataManager.onPageChanged = true;
             }
         }
     }

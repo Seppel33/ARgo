@@ -14,6 +14,7 @@ public class GlobalDataManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        onPageChanged = false;
         PauseSim = false;
         ambienceIsPlaying = true;
         firstImageTracked = false;

@@ -30,6 +30,13 @@ public class HideUnhideTextbox : MonoBehaviour
             _image.sprite = up;
             readText.Stop();
         }
+        
+        if (GlobalDataManager.onPageChanged)
+        {
+            readText.Stop();
+            textBox.SetActive(false);
+            GlobalDataManager.onPageChanged = false;
+        }
     }
 
     public void Hide()
