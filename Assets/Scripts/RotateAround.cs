@@ -25,6 +25,12 @@ public class RotateAround : MonoBehaviour
         currentRealMode = SolarContentManager.ShowRealValue;
         Setup();   
     }
+    private void Awake()
+    {
+        currentRealMode = false;
+        currentRealMode = SolarContentManager.ShowRealValue;
+        Setup();
+    }
 
     // Update is called once per frame
     void Update()
