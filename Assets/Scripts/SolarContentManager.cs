@@ -23,12 +23,15 @@ public class SolarContentManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Berechnet Relative Bewegung der Sonne
         CalculateRelSunMove();
     }
+    //Wechselt den Modus zwischen den echten und den vereinfachten Daten (Größe und Entfernungen)
     public void ChangeMode()
     {
         PrefabScale = transform.parent.transform.localScale;
         ShowRealValue = !ShowRealValue;
+        //Schaltet die Info Buttons für die realistische Ansicht aus, und umgekehrt wieder an
         if(ShowRealValue){
             GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
             foreach (GameObject bulb in bulbs)
@@ -37,7 +40,6 @@ public class SolarContentManager : MonoBehaviour
                 bulb.SetActive(false);
             }
         }else{
-            //GameObject[] bulbs = GameObject.FindGameObjectsWithTag("Bulb");
             foreach (GameObject bulb in deletedBulbs)
             {
                 bulb.SetActive(true);

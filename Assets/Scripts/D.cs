@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+//Custom Debug Console
 public class D : MonoBehaviour
 {
     static List<string> m_DebugMessages;
@@ -16,9 +17,9 @@ public class D : MonoBehaviour
 
         D.Log("Logger is running...");
     }
+    //Standard Debug.Log ersatz
     public static void Log(string debugMessage)
     {
-        //normal Log output
         if (debugMessage.Split('\n').Length > 10)
         {
             debugMessage = "Error - Message to long (over 10 lines)";

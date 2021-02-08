@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Ist ein Ersatz für den Trail-Renderer. Ein Line-Renderer der umfunktioniert wurde.
 public class CustomTrail : MonoBehaviour
 {
     float trailTime = 0.05f;
@@ -24,6 +25,7 @@ public class CustomTrail : MonoBehaviour
     {
         if (Time.time-lastTime > trailTime)
         {
+            //Entfernt die ersten paar Punkte aus der Line, da diese oft nicht an den korrekten Stellen starten
             if (preDelete < 2)
             {
                 //lineTrail.startWidth = width;
@@ -31,11 +33,15 @@ public class CustomTrail : MonoBehaviour
                 preDelete++;
                 RemoveLastPosition(0);
             }
+
             lastTime = Time.time;
             SetPosition();
         }
         
     }
+    /// <summary>
+    ///Setzt neue Punkte in die Line
+    /// </summary>
     void SetPosition()
     {
         lineTrail.positionCount = lineTrail.positionCount + 1;
@@ -46,6 +52,7 @@ public class CustomTrail : MonoBehaviour
             RemoveLastPosition(lenght);
         }
     }
+    //Löscht die letzte(n) Position(en)
     void RemoveLastPosition(int newLenght)
     {
         Vector3[] tempList = new Vector3[newLenght];

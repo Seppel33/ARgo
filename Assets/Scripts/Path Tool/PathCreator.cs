@@ -2,27 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+
+//Wählbarer Modus im Unity Inspector
 public enum InterpolationMode
 {
     Lerp,
     Catmull,
     Bezier
 };
+//Berechnungen für den Pfad
 public class PathCreator : MonoBehaviour
 {
-    public Transform[] waypoints;
-    public bool loop;
+    public Transform[] waypoints; //Liste an Waypoints
+    public bool loop; //bool ob es eine durchgängige Schleife sein soll
 
     private bool oldLoop;
 
     private int currentWaypointToReach = 1;
     private int comingFromWaypoint = 0;
     private float time;
-    public Quaternion newRotation;
+    public Quaternion newRotation; //rotation entlang der linie;
     public bool done = false;
 
     private void Awake()
     {
+        //Sammelt alle Waypoints (Childs des Objektes) und deaktiviert sie in Runtime
         waypoints = new Transform[transform.childCount];
         for(int i = 0; i< transform.childCount; i++)
         {
@@ -46,11 +50,13 @@ public class PathCreator : MonoBehaviour
     }
     public InterpolationMode interpolationMode = new InterpolationMode();
 
+    //Gibt nächste Position 
     public Vector3 GetNextPos()
     {
         Vector3 v = new Vector3();
         if (waypoints.Length > 1 && currentWaypointToReach < waypoints.Length)
         {
+            //errechnet time zwischen 0 und 1
             time += Time.deltaTime;
             if (time > 1)
             {
@@ -72,7 +78,7 @@ public class PathCreator : MonoBehaviour
                     }
                 }
             }
-
+            //wählt interpolation-mode
             switch ((int)interpolationMode)
             {
                 case (0):
@@ -80,6 +86,7 @@ public class PathCreator : MonoBehaviour
                     newRotation = Quaternion.Lerp(waypoints[comingFromWaypoint].rotation, waypoints[currentWaypointToReach].rotation, time);
                     break;
                 case (1):
+                    //Auswahl der zu nutzenden Punkte (anders bei loop true/false)
                     int p1;
                     if (comingFromWaypoint == 0)
                     {
@@ -119,6 +126,7 @@ public class PathCreator : MonoBehaviour
                     newRotation = Quaternion.Lerp(waypoints[p2].rotation, waypoints[p3].rotation, time);
                     break;
                 case (2):
+                    //todo
                     break;
             }
             return v;
@@ -130,10 +138,12 @@ public class PathCreator : MonoBehaviour
             return v;
         }
     }
+    //Normaler gerader Lerp zwischen Waypoints
     public static Vector3 Lerp(Vector3 p0, Vector3 p1, float t)
     {
         return (1.0f - t) * p0 + t * p1;
     }
+    //Catmull Interpolation zwischen Waypoints
     public static Vector3 Catmull(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
     {
         return ((p1 * 2.0f)
@@ -141,6 +151,7 @@ public class PathCreator : MonoBehaviour
             + ((p0 * 2.0f) - (p1 * 5.0f) + (p2 * 4.0f) - p3) * (t * t)
             + (-1 * p0 + (p1 * 3.0f) - (p2 * 3.0f) + p3) * (t * t * t)) * 0.5f;
     }
+    //Bezier zwischen Waypoints
     public static Vector3 Bezier(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
     {
         return (1.0f - t) * (1.0f - t) * (1.0f - t) * p0

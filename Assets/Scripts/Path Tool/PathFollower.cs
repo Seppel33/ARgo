@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//GameObject Folgt angefügtem Pfad
 public class PathFollower : MonoBehaviour
 {
     [SerializeField]
-    PathCreator path;
+    PathCreator path; //zu folgender Pfad
     [SerializeField]
-    bool destroyOnEnd;
+    bool destroyOnEnd; //ob GameObject am Ende des Pfades zerstört werden soll
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,10 @@ public class PathFollower : MonoBehaviour
     void Update()
     {
         Vector3 pos;
+        //Fragt ob Pfad durchlaufen wurde
         if (!path.done)
         {
+            //erhält die nächste Position auf dem Pfad
             pos = path.GetNextPos();
             if (pos != null)
             {
@@ -32,6 +35,7 @@ public class PathFollower : MonoBehaviour
                     transform.position = pos;
                 }
             }
+            //nimmt neue Rotation
             transform.rotation = path.newRotation;
         }
         

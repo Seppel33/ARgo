@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GlobalDataManager : MonoBehaviour
 {
-    public static bool PauseSim;
+    public static bool PauseSim; //Pausiert RotateAround Scrips
 
     public static bool ambienceIsPlaying;
 
@@ -23,6 +23,7 @@ public class GlobalDataManager : MonoBehaviour
         infoButtonsOff = false;
     }
     
+    //Pausiert die meißten Bewegungen
     public void PauseScene()
     {
         PauseSim = !PauseSim;

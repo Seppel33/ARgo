@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Erlaubt das Rotieren um einen Ankerpunkt(dieses GameObject) und um die eigene Achse (erstes child)
 public class RotateAround : MonoBehaviour
 {
     bool currentRealMode; //true = real Values
@@ -15,34 +16,39 @@ public class RotateAround : MonoBehaviour
     public float scaledDistToSun;
 
     public float planetScale; //mio km
-    public float scaledPlanetScale;
+    public float scaledPlanetScale; //Unity Scale
 
     //private TrailRenderer trail;
-    public CustomTrail trail;
+    public CustomTrail trail; //Trail des Objektes
     void Start()
     {
         currentRealMode = false;
         currentRealMode = SolarContentManager.ShowRealValue;
         Setup();   
     }
+    /*
     private void Awake()
     {
         currentRealMode = false;
         currentRealMode = SolarContentManager.ShowRealValue;
         Setup();
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
+        
         if (!GlobalDataManager.PauseSim)
         {
+            //Führt die Rotationen aus
             transform.Rotate(Vector3.up, speed * Time.deltaTime * 500);
             transform.GetChild(0).transform.Rotate(Vector3.up, selfRotate * Time.deltaTime * 500);
         }
 
+       
         if(currentRealMode != SolarContentManager.ShowRealValue)
         {
+            //Ändert den Modus wenn nötig
             currentRealMode = SolarContentManager.ShowRealValue;
             Setup();
         }
@@ -56,10 +62,12 @@ public class RotateAround : MonoBehaviour
         }
     }
 
+    //Setzt alle Daten neu (wird beim Erstellen und Modus-Änderung aufgerufen)
     void Setup()
     {
         float position;
         float scale;
+        //Wählt Daten aus
         if (currentRealMode)
         {
             position = distToSun;
@@ -71,6 +79,8 @@ public class RotateAround : MonoBehaviour
             scale = scaledPlanetScale;
         }
         transform.GetChild(0).transform.localPosition =new Vector3(position,0,0);
+
+        //Speziell für Erde, da es einen eigenen Mond hat
         if (name.Equals("Earth"))
         {
             transform.GetChild(1).transform.localPosition = new Vector3(position, 0, 0);

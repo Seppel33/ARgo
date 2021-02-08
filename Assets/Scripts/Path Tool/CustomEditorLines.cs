@@ -1,9 +1,10 @@
-﻿#if UNITY_EDITOR
+﻿#if UNITY_EDITOR //Nur im Editor nutzbar
 using UnityEditor;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+//Zeigt die Interpolierte Line im Editor an (wenn object ausgewähtl welches "PathCreator" angehängt hat
 [CustomEditor(typeof(PathCreator))]
 public class CustomEditorLines : Editor
 {
@@ -46,13 +47,15 @@ public class CustomEditorLines : Editor
     {
         Draw();
     }
-
+    //Zeichnet die Linien im Editor (ähnlich zu PathCreator, nur alles auf einmal berechnet)
     void Draw()
     {
         List<Vector3> linePoints = new List<Vector3>();
         List<Vector3> rotPoints = new List<Vector3>();
+
         if (waypoints.Length <= 1)
             return;
+
         int loopBuffer = 0;
         if (pathCreator.loop)
         {
@@ -64,7 +67,7 @@ public class CustomEditorLines : Editor
             Vector3 point;
             //Quaternion rot;
 
-            float accuracy = 0.1f;
+            float accuracy = 0.1f; //interpolation Steps between Points
             int anchorNow = i;
             int anchorNext = anchorNow + 1;
             for (float t = accuracy; t < 1; t = t + accuracy)
@@ -135,6 +138,7 @@ public class CustomEditorLines : Editor
                         break;
                 }
             }
+            //Fügt letzten Anchor als Punkt hinzu
             int lastPoint = i+1;
             if (pathCreator.loop)
             {
@@ -145,6 +149,7 @@ public class CustomEditorLines : Editor
             }
             linePoints.Add(waypoints[lastPoint].position);
 
+            //Zeichnet Linie zwischen allen errechneten Punkten
             for(int x = 0; x<linePoints.Count-1; x++)
             {
                 //Handles.PositionHandle(linePoints[x], Quaternion.identity);
