@@ -11,6 +11,7 @@ public class SolarScale : MonoBehaviour
 
     void Update()
     {
+        //Wenn Touch kommt 
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             
@@ -18,7 +19,9 @@ public class SolarScale : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
+                //Überprüft ob es der Maßstab ist
                 if(Hit.transform.name.Equals("massstab")){
+                    //Maßstab wird geändert
                     solarContentManager.ChangeMode();
                 }
             }
