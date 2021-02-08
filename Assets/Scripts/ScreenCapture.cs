@@ -12,6 +12,7 @@ public class ScreenCapture : MonoBehaviour
 
     private void Awake()
     {
+        //Speichert die Kamera in einer Variable
         arCamera = gameObject.GetComponent<Camera>();
     }
 
@@ -19,6 +20,7 @@ public class ScreenCapture : MonoBehaviour
     {
         if (takeScreenshotOnNextframe)
         {
+            //Erster Versuch die Screenshots zu speichern, bevor Methode mit Sharing gefunden wurde
             takeScreenshotOnNextframe = false;
             RenderTexture renderTexture = arCamera.targetTexture;
             

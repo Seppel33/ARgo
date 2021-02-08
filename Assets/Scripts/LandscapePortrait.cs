@@ -15,6 +15,8 @@ public class LandscapePortrait : MonoBehaviour
 
     void Update()
     {
+        //Wenn das Smartphone sich im Horizontalen Modus befindet sollen die Textboxen aus Platzmangel ausgeblendet werden und die 
+        //Icons deaktiviert werden
         if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
         {
             infoBoxGameObject.transform.GetChild(0).gameObject.SetActive(false);
@@ -25,6 +27,7 @@ public class LandscapePortrait : MonoBehaviour
             }
 
         }
+        //Im Portraitmodus sollen die Buttons wieder ihre normale Größe bekommen
         else if (Screen.orientation == ScreenOrientation.Portrait)
         {
             foreach (GameObject go in scaledUI)

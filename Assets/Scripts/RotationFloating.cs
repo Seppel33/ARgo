@@ -35,6 +35,7 @@ public class RotationFloating : MonoBehaviour
 
     public void ForwardDirection()
     {
+        //dreht Objekt im Uhrzeigersinn
         if(forwardX)
             transform.Rotate(Time.deltaTime * speed, 0, 0, Space.Self);
         if(forwardY)
@@ -45,6 +46,7 @@ public class RotationFloating : MonoBehaviour
 
     public void ReverseDirection()
     {
+        //dreht Objekt gegen Uhrzeigersinn
         if(reverseX)
             transform.Rotate(-Time.deltaTime * speed, 0, 0, Space.Self);
         if(reverseY)
@@ -54,6 +56,7 @@ public class RotationFloating : MonoBehaviour
 
         if (floatingY)
         {
+            //Lässt objekt hoch und runter schweben
             Vector3 floatingPos = transform.position;
             transform.position = new Vector3(floatingPos.x,firstYPos+floatingStrenght*Mathf.Sin(floatingSpeed*Time.time),floatingPos.z);        
         }

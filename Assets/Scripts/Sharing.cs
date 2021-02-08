@@ -8,6 +8,7 @@ public class Sharing : MonoBehaviour
     private string shareMessage;
     public void ShareButton()
     {
+        //Nachricht, welche beim Absenden des Screenshots mitgegeben wird
         shareMessage = "Schau mal was ich mit den ARgonauten erlebt habe!";
         StartCoroutine(TakeScreenshotAndShare());
     }
@@ -20,12 +21,15 @@ public class Sharing : MonoBehaviour
         ss.ReadPixels( new Rect( 0, 0, Screen.width, Screen.height ), 0, 0 );
         ss.Apply();
 
+        //Speichert das Bild auf dem Gerät
         string filePath = Path.Combine( Application.temporaryCachePath, "shared img.png" );
+        //Als png
         File.WriteAllBytes( filePath, ss.EncodeToPNG() );
 
-        // To avoid memory leaks
+        //Gibt speicher wieder frei
         Destroy( ss );
 
+        //Verwendet Nativeshare Skript um das Bild über die Android gängigen Apps zu teilen
         new NativeShare().AddFile( filePath )
             .SetSubject("ARgo").SetText(shareMessage)
             .SetCallback( ( result, shareTarget ) => Debug.Log( "Share result: " + result + ", selected app: " + shareTarget ) )
