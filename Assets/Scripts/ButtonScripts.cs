@@ -91,6 +91,13 @@ public class ButtonScripts : MonoBehaviour
             foreach (GameObject go in tutorials)
             {
                 go.SetActive(true);
+                if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
+                {
+                    if (go.name.Equals("IasonTutorial"))
+                    {
+                        go.SetActive(false);
+                    }
+                }
             }
         }
         else if (!tog)
