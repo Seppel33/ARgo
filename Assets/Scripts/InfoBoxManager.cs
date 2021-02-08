@@ -66,6 +66,15 @@ public class InfoBoxManager : MonoBehaviour
                 }
             }
         }
+
+        if (GlobalDataManager.infoButtonsOff && gameObject.transform.tag.Equals("Bulb") && gameObject.activeInHierarchy)
+        {
+            //gameObject.SetActive(false);
+            foreach (Transform children in gameObject.transform)
+            {
+                children.transform.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void InfoAudioPlay()

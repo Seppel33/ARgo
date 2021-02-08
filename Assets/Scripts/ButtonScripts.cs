@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ButtonScripts : MonoBehaviour
 {
     private AudioSource _audioSource;
-    private GameObject[] _infobuttons;
+    public GameObject[] _infobuttons;
     [SerializeField] private GameObject tutorial;
     [SerializeField] private GameObject[] settingsToggle;
     [SerializeField] private GameObject[] tutorials;
@@ -16,12 +16,27 @@ public class ButtonScripts : MonoBehaviour
     private bool switcher = true;
     private void Update()
     {
-        
         if (switcher && GlobalDataManager.firstImageTracked)
         {
             scanPage.SetActive(false);
             switcher = false;
         }
+        
+        //Debug.Log(GlobalDataManager.infoButtonsOff);
+        /*if (GlobalDataManager.infoButtonsOff)
+        {
+            foreach(GameObject go in _infobuttons)
+            {
+                //go.transform.GetChild(0).gameObject.SetActive(false);
+                foreach (Transform children in go.transform)
+                {
+                    if (children.transform.gameObject.activeInHierarchy)
+                    {
+                        children.transform.gameObject.SetActive(false);
+                    }
+                }
+            }
+        }*/
     }
 
     public void TurnBulbOff(bool tog)
@@ -29,16 +44,26 @@ public class ButtonScripts : MonoBehaviour
         _infobuttons = GameObject.FindGameObjectsWithTag("Bulb");
         if (tog)
         {
+            GlobalDataManager.infoButtonsOff = true;
             foreach(GameObject go in _infobuttons)
             {
-                go.transform.GetChild(0).gameObject.SetActive(false);
+                //go.transform.GetChild(0).gameObject.SetActive(false);
+                foreach (Transform children in go.transform)
+                {
+                    children.transform.gameObject.SetActive(false);
+                }
             }
         }
         else
         {
+            GlobalDataManager.infoButtonsOff = false;
             foreach(GameObject go in _infobuttons)
             {
-                go.transform.GetChild(0).gameObject.SetActive(true);
+                //go.transform.GetChild(0).gameObject.SetActive(true);
+                foreach (Transform children in go.transform)
+                {
+                    children.transform.gameObject.SetActive(true);
+                }
             }
         }
     }
@@ -66,6 +91,13 @@ public class ButtonScripts : MonoBehaviour
             foreach (GameObject go in tutorials)
             {
                 go.SetActive(true);
+                if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
+                {
+                    if (go.name.Equals("IasonTutorial"))
+                    {
+                        go.SetActive(false);
+                    }
+                }
             }
         }
         else if (!tog)

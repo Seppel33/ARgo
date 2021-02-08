@@ -118,14 +118,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 180149b1a35449044a27b451e816d2de, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.048
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 180149b1a35449044a27b451e816d2de, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 180149b1a35449044a27b451e816d2de, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.7071068
       objectReference: {fileID: 0}
@@ -200,14 +192,6 @@ PrefabInstance:
     - target: {fileID: 19800002, guid: 180149b1a35449044a27b451e816d2de, type: 3}
       propertyPath: scalingMode
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800002, guid: 180149b1a35449044a27b451e816d2de, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800002, guid: 180149b1a35449044a27b451e816d2de, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 13.09
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: 180149b1a35449044a27b451e816d2de, type: 3}
       propertyPath: scalingMode
