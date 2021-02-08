@@ -17,18 +17,4 @@ public class AmbienceManager : MonoBehaviour
             ambienceAudioSource.Stop();
         }
     }
-
-    void Update()
-    {
-        
-
-        if (GlobalDataManager.ambienceIsPlaying == true)
-        {
-            Debug.Log(true);
-        }
-        else
-        {
-            Debug.Log(false);
-        }
-    }
 }
