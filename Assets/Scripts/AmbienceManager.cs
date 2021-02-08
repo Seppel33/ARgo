@@ -7,6 +7,8 @@ public class AmbienceManager : MonoBehaviour
     public AudioSource ambienceAudioSource;
     void Start()
     {
+        
+        //Wenn der Mutebutton im Menü gedrückt wird, sollen die Umgebungsgeräusche ausgeschaltet werden
         ambienceAudioSource = gameObject.GetComponent<AudioSource>();
         if (GlobalDataManager.ambienceIsPlaying)
         {

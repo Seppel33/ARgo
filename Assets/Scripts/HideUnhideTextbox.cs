@@ -21,16 +21,19 @@ public class HideUnhideTextbox : MonoBehaviour
 
     private void Update()
     {
+        //Wenn eine Textbox in der Hierarchie ist soll der Pfeil vom Button sich drehen
         if (textBox.activeInHierarchy)
         {
             _image.sprite = down;
         }
         else
         {
+            //Wenn keine Textbox in der Hierarchie ist, soll der Text auch nicht vorgelesen werden
             _image.sprite = up;
             readText.Stop();
         }
         
+        //Wenn die Buchseite gewechselt wird soll der Leser auch aufhören vorzulesen und die Textbox ausgeschaltet werden, damit alte Inhalte nicht auf einer neuen Seite sind
         if (GlobalDataManager.onPageChanged)
         {
             readText.Stop();
@@ -41,29 +44,8 @@ public class HideUnhideTextbox : MonoBehaviour
 
     public void Hide()
     {
+        //Versteckt die Textbox, wenn man den Button drückt
         if (textBox.activeInHierarchy)
-        {
-            textBox.SetActive(false);
-        }
-        else
-        {
-            textBox.SetActive(true);
-        }
-    }
-    public void HideTextbox(bool tog)
-    {
-        //Für den Fall, dass die Textbox vor dem Buttonpress aktiv war
-        /*if (textBox.activeInHierarchy)
-        {
-            tog = true;
-        }
-        else
-        {
-            tog = false;
-        }*/
-        
-        //Wenn der Toggle true ist, dann soll die Textbox ausgeschaltet werden
-        if (tog)
         {
             textBox.SetActive(false);
         }
